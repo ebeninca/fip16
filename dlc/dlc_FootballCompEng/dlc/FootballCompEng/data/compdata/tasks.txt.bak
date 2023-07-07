@@ -10,7 +10,10 @@
 57,start,FillFromCompTableBackupLeague,60,1622,343,1
 57,start,FillWithTeam,61,1,112208,0
 57,start,FillFromCompTableBackupLeague,61,1431,350,1
-57,start,FillWithTeam,61,2,101151,0
+57,start,FillWithTeam,61,4,101151,0
+57,start,FillWithTeam,61,5,111986,0
+57,start,FillWithTeam,61,6,111701,0
+57,start,FillWithTeam,61,3,101136,0
 73,end,UpdateTable,73,85,1,1
 73,end,UpdateTable,73,85,2,2
 73,end,UpdateTable,73,80,1,3
