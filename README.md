@@ -8,7 +8,8 @@
 ## Correções/Alterações realizadas:
 
 - CONCACAF champions corrigido setup stage G2: winners ligaMX e MLS
-- FIFA CWC G3: Winner Saudi/RSL + Special Teams Hosts (Japan, Marrocos, UAE)
+- FIFA CWC G3: Winner Saudi/RSL + Special Teams Hosts (Japan, Marrocos, UAE) + Stadiums
+- Fixed continental competitions prize money
 
 ## Pendências: 
 
