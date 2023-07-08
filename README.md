@@ -20,7 +20,7 @@ v62.002
 - "Check Schedule Conflicts" enable for all continental clubs competitions and FIFA CWC.
 - Austria: changed december league dates
 - Belgium: changed cup and league december dates
-- Added more dates to WE PL in december to avoid FIFA CWC date conflict
+- Added more dates to WE PL to avoid FIFA CWC date conflict
 
 v62.001
 - CONCACAF champions setup stage G2: winners ligaMX e MLS
