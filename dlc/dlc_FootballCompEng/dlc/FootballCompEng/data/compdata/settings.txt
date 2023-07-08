@@ -3084,7 +3084,7 @@
 1438,schedule_year_start,2023
 1438,schedule_year_offset,4
 1438,schedule_internationaldependency,0
-1438,match_matchimportance,100
+1438,match_matchimportance,99
 1439,match_stagetype,SETUP
 1439,standings_sort,TEAMRATING
 1442,match_stagetype,SETUP
