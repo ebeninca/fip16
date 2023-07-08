@@ -88,6 +88,7 @@
 56,info_slot_champ,1
 57,asset_id,74
 57,comp_type,CUP
+57,schedule_checkconflict,1
 57,match_matchimportance,75
 58,match_stagetype,SETUP
 62,match_stagetype,KO1LEG
@@ -643,6 +644,7 @@
 337,info_slot_champ,1
 338,num_games,2
 338,info_color_slot_euro_league,1
+339,num_games,1
 339,advance_standingskeep,83
 340,nation_id,13
 340,rule_suspension,340
@@ -2619,6 +2621,7 @@
 1247,info_slot_champ,1
 1248,asset_id,3004
 1248,comp_type,CUP
+1248,schedule_checkconflict,1
 1248,match_matchimportance,80
 1249,match_stagetype,SETUP
 1252,match_stagetype,KO2LEGS
@@ -2931,6 +2934,7 @@
 1385,info_slot_champ,1
 1386,asset_id,3005
 1386,comp_type,CUP
+1386,schedule_checkconflict,1
 1386,match_matchimportance,80
 1387,match_stagetype,SETUP
 1389,match_stagetype,LEAGUE
@@ -3121,6 +3125,7 @@
 1467,schedule_seasonstartmonth,FEB
 1467,schedule_year_start,2019
 1467,schedule_year_offset,1
+1467,schedule_checkconflict,1
 1467,match_matchimportance,80
 1468,match_stagetype,SETUP
 1470,match_stagetype,LEAGUE
@@ -3448,6 +3453,7 @@
 1621,info_slot_champ,1
 1622,asset_id,3003
 1622,comp_type,CUP
+1622,schedule_checkconflict,1
 1622,match_matchimportance,80
 1623,match_stagetype,SETUP
 1627,info_special_team_id,130241
@@ -3513,6 +3519,7 @@
 1668,info_slot_champ,1
 1669,asset_id,3013
 1669,comp_type,CUP
+1669,schedule_checkconflict,1
 1669,match_matchimportance,70
 1669,advance_teamcompdependency,1622
 1670,match_stagetype,SETUP
