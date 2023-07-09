@@ -399,7 +399,9 @@
 1073,end,UpdateLeagueStats,1076,50,0,0
 1080,start,FillFromCompTable,1082,1088,2,0
 1080,start,FillFromCompTable,1082,1141,2,0
+1080,start,FillFromLeagueMaxFromCountry,1082,53,4,4
 1088,end,UpdateTable,1088,1140,1,1
+1088,end,UpdateTable,1088,1140,2,2
 1088,start,FillFromLeague,1090,53,0,0
 1088,start,FillFromLeague,1091,54,0,0
 1141,end,UpdateTable,1141,1143,1,1

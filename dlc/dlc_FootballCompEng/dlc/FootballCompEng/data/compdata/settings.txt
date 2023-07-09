@@ -2616,6 +2616,8 @@
 1246,match_matchsituation,GROUP
 1247,num_games,1
 1247,info_color_slot_champ,1
+1247,info_color_slot_adv_group,2
+1247,info_color_slot_adv_group,3
 1247,info_slot_champ,1
 1248,asset_id,3004
 1248,comp_type,CUP
@@ -3428,7 +3430,7 @@
 1610,asset_id,960
 1610,comp_type,INTERCUP
 1610,schedule_seasonstartmonth,MAY
-1610,schedule_year_start,2025
+1610,schedule_year_start,2023
 1610,schedule_year_offset,2
 1610,schedule_internationaldependency,0
 1610,match_matchimportance,75

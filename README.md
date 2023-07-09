@@ -22,20 +22,30 @@ v62.002
 - Belgium: changed cup and league december dates
 - Added more dates to Egypt (WE PL) to avoid FIFA CWC date conflict
 - Ireland: changed dates avoid FIFA CWC date conflict
-- Netherlands/Norway/Poland: changed dates avoiding date conflicts
+- Netherlands/Norway/Poland: changed dates avoiding conflicts
 - Fixed TBD on CM16 Europa League Setup Stage (Portuguese League champion)
+- African Cup of Nations first year in 2023, kept periodicity in 2 years
+- Portugal/Spain changed december games dates to avoid conflicts
+- Fixed broken "Supercopa de Espana", TBD error. Setup Stage G1, Ranking table "Copa del Rey" adjusted
+- Fixed CONCACAF Gold Cup dates, bigger gap between games
 
 v62.001
-- CONCACAF champions setup stage G2: winners ligaMX e MLS
+- CONCACAF champions setup stage G2: winners ligaMX and MLS
 - FIFA CWC G3: Winner Saudi/RSL + Special Teams Hosts (Japan, Marrocos, UAE) + Stadiums
 - Fixed all continental clubs competitions prize money
 
 
 ## Issues: 
 
+- "Taça de Portugal" no happening/showing
+- A chance of conflict on FIFA CWC exists between the host team and the winner of AFC or CAF Champions league, it's very rare, doesn't crash, cup still playable, no further action for now.
+- New Zealand is qualifying to WC through CONCACAF Gold Cup, no changes made on it.
+- CONCACAF Gold Cup not showing on tables full screen, same problem of AFC Asian Cup, still playable.
+- Definir um jogo de final na Gold Cup, 
+
 - v62 CAF Real Madrid (as ukraine national team manager): ukraine isn't in the euro qualifiers competition
 - v62 CAF Al Ahly (as saudi arabia national team manager): shows "Copa America" table instead of "AFC Asian Cup" table. Not crashing, competition still playable.
-- v62 CAF cm16 editing: europa league to be defined Portuguese League champion.
+- v62 CAF Real Madrid (as USA national team manager): FIFA CWC, Usan Hyundai always winning AFC Champions League? something broken?
 
 
 ## Future Features:
