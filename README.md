@@ -22,6 +22,8 @@ v62.002
 - Belgium: changed cup and league december dates
 - Added more dates to Egypt (WE PL) to avoid FIFA CWC date conflict
 - Ireland: changed dates avoid FIFA CWC date conflict
+- Netherlands/Norway/Poland: changed dates avoiding date conflicts
+- Fixed TBD on CM16 Europa League Setup Stage (Portuguese League champion)
 
 v62.001
 - CONCACAF champions setup stage G2: winners ligaMX e MLS
@@ -36,8 +38,12 @@ v62.001
 - v62 CAF cm16 editing: europa league to be defined Portuguese League champion.
 
 
+## Future Features:
+
 ***** Testar check schedule conflicts - LigaMX / Real Madrid / Flamengo
 - Changed dates on Brasileirao in december to avoid FIFA CWC date conflict
 AJUSTAR - Added more dates to Liga MX in december to avoid FIFA CWC date conflict
 
-**** TESTAR SIMULACAO COPA DO MUNDO EM 2022 - Eliminatorias Asia não está sendo usada, Nova zelandia não é considerada / Setar selecoes no ranking das eliminatorias para gera a copa corretamente.
+***** TESTAR SIMULACAO COPA DO MUNDO EM 2022 - Eliminatorias Asia não está sendo usada, Nova zelandia não é considerada / Setar selecoes no ranking das eliminatorias para gera a copa corretamente.
+
+***** Try to simplify the setup stages to leave some free compids to be used for new competitions or expand existing competitions (maybe this is causing long term crashings)

@@ -165,7 +165,7 @@
 208,start,FillFromCompTableBackup,210,707,766,1
 208,start,FillFromCompTable,210,766,1,0
 208,start,FillFromCompTableBackup,210,1029,1051,1
-208,start,FillFromCompTable,210,287,1,0
+208,start,FillFromCompTable,210,1051,1,0
 208,start,FillFromSpecialTeams,210,1,0,0
 208,start,FillFromCompTableBackup,211,948,973,1
 208,start,FillFromCompTableBackup,211,311,333,1
