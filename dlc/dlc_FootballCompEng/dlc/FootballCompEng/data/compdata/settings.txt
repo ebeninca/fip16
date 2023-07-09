@@ -710,6 +710,7 @@
 365,nation_id,14
 365,rule_suspension,365
 365,rule_numyellowstored,5
+365,schedule_seasonstartmonth,JUL
 366,asset_id,228
 366,comp_type,SUPERCUP
 366,match_matchimportance,75

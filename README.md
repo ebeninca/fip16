@@ -28,6 +28,8 @@ v62.002
 - Portugal/Spain changed december games dates to avoid conflicts
 - Fixed broken "Supercopa de Espana", TBD error. Setup Stage G1, Ranking table "Copa del Rey" adjusted
 - Fixed CONCACAF Gold Cup dates, bigger gap between games
+- Removed ENGL PL / FRAN L1 / GERM B1 / ITAL A december dates that conflicts with FIFA CWC
+- Reduced number of dates on IREL League to avoid "end of the season" in the beginning.
 
 v62.001
 - CONCACAF champions setup stage G2: winners ligaMX and MLS
@@ -37,22 +39,38 @@ v62.001
 
 ## Issues: 
 
-- "Taça de Portugal" no happening/showing
-- A chance of conflict on FIFA CWC exists between the host team and the winner of AFC or CAF Champions league, it's very rare, doesn't crash, cup still playable, no further action for now.
+data alteradas na premier league geram fim de temporada no primeiro mes
+
+- Retestar todas as copas desde a Austria pra ver se nao tem TBD
+
+- test tournaments in tournaments mode ASIAN CUP:
+
+in the compobj text assign it to a nation and select it in tournament mode.
+
+1667,3,C960,TrophyName_Abbr15_960,1666
+
+change the line above to the line below.
+
+1667,3,C960,TrophyName_Abbr15_960,1505
+
+load tournament mode and select saudi arabia. 
+ 
+ 
+- A chance of conflict on FIFA CWC exists between the host team and the winners of AFC / CAF Champions league being the same teams, it's very rare, doesn't crash, cup still playable, no further action for now.
 - New Zealand is qualifying to WC through CONCACAF Gold Cup, no changes made on it.
 - CONCACAF Gold Cup not showing on tables full screen, same problem of AFC Asian Cup, still playable.
 - Definir um jogo de final na Gold Cup, 
 
 - v62 CAF Real Madrid (as ukraine national team manager): ukraine isn't in the euro qualifiers competition
-- v62 CAF Al Ahly (as saudi arabia national team manager): shows "Copa America" table instead of "AFC Asian Cup" table. Not crashing, competition still playable.
+- v62 CAF Al Ahly (as saudi arabia national team manager): shows "Copa America" table instead of "AFC Asian Cup" table. Not crashing, competition still playable. (not showing on original version too)
 - v62 CAF Real Madrid (as USA national team manager): FIFA CWC, Usan Hyundai always winning AFC Champions League? something broken?
 
 
 ## Future Features:
 
 ***** Testar check schedule conflicts - LigaMX / Real Madrid / Flamengo
-- Changed dates on Brasileirao in december to avoid FIFA CWC date conflict
-AJUSTAR - Added more dates to Liga MX in december to avoid FIFA CWC date conflict
+- Change dates on "Brasileirao" in december to avoid FIFA CWC date conflict
+- Add more dates to Liga MX in december to avoid FIFA CWC date conflict
 
 ***** TESTAR SIMULACAO COPA DO MUNDO EM 2022 - Eliminatorias Asia não está sendo usada, Nova zelandia não é considerada / Setar selecoes no ranking das eliminatorias para gera a copa corretamente.
 
