@@ -31,6 +31,7 @@ v62.002
 - Removed ENGL PL / FRAN L1 / GERM B1 / ITAL A december dates that conflicts with FIFA CWC
 - Reduced number of dates on IREL League to avoid "end of the season" in the beginning.
 - SCOT/SWIT/TURK/ROMA ajusted dates
+- Big overhaul on CONCACAF / MEXI / UNIT calendar and clubs that qualifies to ConcaChampions
 
 v62.001
 - CONCACAF champions setup stage G2: winners ligaMX and MLS
@@ -52,7 +53,7 @@ change the line above to the line below.
 
 load tournament mode and select saudi arabia. 
  
- 
+- Canadian clubs on MLS doesn't participate in the US Open Cup, no further action for now.
 - A chance of conflict on FIFA CWC exists between the host team and the winners of AFC / CAF Champions league being the same teams, it's very rare, doesn't crash, cup still playable, no further action for now.
 - New Zealand is qualifying to WC through CONCACAF Gold Cup, no changes made on it.
 - CONCACAF Gold Cup not showing on tables full screen, same problem of AFC Asian Cup, still playable.
@@ -72,4 +73,5 @@ load tournament mode and select saudi arabia.
 
 ***** TESTAR SIMULACAO COPA DO MUNDO EM 2022 - Eliminatorias Asia não está sendo usada, Nova zelandia não é considerada / Setar selecoes no ranking das eliminatorias para gera a copa corretamente.
 
-***** Try to simplify the setup stages to leave some free compids to be used for new competitions or expand existing competitions (maybe this is causing long term crashings)
+***** Try to simplify the setup stages to leave some free compids to be used for new competitions or expand existing competitions (maybe this is causing long term crashings) 
+- Expand CONCACAF CHAMPIONS League to 16 teams
