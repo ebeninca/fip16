@@ -30,6 +30,7 @@ v62.002
 - Fixed CONCACAF Gold Cup dates, bigger gap between games
 - Removed ENGL PL / FRAN L1 / GERM B1 / ITAL A december dates that conflicts with FIFA CWC
 - Reduced number of dates on IREL League to avoid "end of the season" in the beginning.
+- SCOT/SWIT/TURK/ROMA ajusted dates
 
 v62.001
 - CONCACAF champions setup stage G2: winners ligaMX and MLS
@@ -38,10 +39,6 @@ v62.001
 
 
 ## Issues: 
-
-data alteradas na premier league geram fim de temporada no primeiro mes
-
-- Retestar todas as copas desde a Austria pra ver se nao tem TBD
 
 - test tournaments in tournaments mode ASIAN CUP:
 
@@ -59,7 +56,8 @@ load tournament mode and select saudi arabia.
 - A chance of conflict on FIFA CWC exists between the host team and the winners of AFC / CAF Champions league being the same teams, it's very rare, doesn't crash, cup still playable, no further action for now.
 - New Zealand is qualifying to WC through CONCACAF Gold Cup, no changes made on it.
 - CONCACAF Gold Cup not showing on tables full screen, same problem of AFC Asian Cup, still playable.
-- Definir um jogo de final na Gold Cup, 
+- Definir um jogo de final na Gold Cup
+- FIFA CWC Cup has been generated in AUG 26, Libertadores champion have to wait an entire year to participate, Is it possible to change this date to earlier DEC?
 
 - v62 CAF Real Madrid (as ukraine national team manager): ukraine isn't in the euro qualifiers competition
 - v62 CAF Al Ahly (as saudi arabia national team manager): shows "Copa America" table instead of "AFC Asian Cup" table. Not crashing, competition still playable. (not showing on original version too)
