@@ -2,17 +2,21 @@
 
 Edited with CM16 v2.0 beta 2 
 
+
 ## Installation
 
 1. Install the fip16 v62 mod on your FIFA 16 (https://dl.fifa-infinity.com/fifa-16/fifa-infinity-patch-16-v6/).
-2. Open Version manager, select v62 CAF and apply (maybe it's not necessary). 
-3. Copy and replace the files in this repository on your FIFA 16 root folder.
-4. Open CM16 editor load the files and use the Regenerate BH function.
+2. Open fip16 version manager, select v62 CAF and apply 
+3. Open CM16 editor, load the files and Regenerate BH (maybe it's not necessary). 
+4. Copy and replace the files in this repository on your FIFA 16 root folder.
+5. Open CM16 editor again load the files and use the Regenerate BH function.
 
-## Selected Cups
 
-- Extra tournaments minus ROU,SWI,IRL
+## Selected Cups on fip16 tournaments manager
+
+- Extra tournaments minus ROU,SUI,IRL
 - Compids 99/99
+
 
 ## Fixes/modifications:
 
@@ -40,24 +44,11 @@ v62.001
 
 
 ## Issues: 
-
-- test tournaments in tournaments mode ASIAN CUP:
-
-in the compobj text assign it to a nation and select it in tournament mode.
-
-1667,3,C960,TrophyName_Abbr15_960,1666
-
-change the line above to the line below.
-
-1667,3,C960,TrophyName_Abbr15_960,1505
-
-load tournament mode and select saudi arabia. 
  
 - Canadian clubs on MLS doesn't participate in the US Open Cup, no further action for now.
 - A chance of conflict on FIFA CWC exists between the host team and the winners of AFC / CAF Champions league being the same teams, it's very rare, doesn't crash, cup still playable, no further action for now.
 - New Zealand is qualifying to WC through CONCACAF Gold Cup, no changes made on it.
 - CONCACAF Gold Cup not showing on tables full screen, same problem of AFC Asian Cup, still playable.
-- Definir um jogo de final na Gold Cup
 - FIFA CWC Cup has been generated in AUG 26, Libertadores champion have to wait an entire year to participate, Is it possible to change this date to earlier DEC?
 
 - v62 CAF Real Madrid (as ukraine national team manager): ukraine isn't in the euro qualifiers competition
@@ -67,11 +58,27 @@ load tournament mode and select saudi arabia.
 
 ## Future Features:
 
-***** Testar check schedule conflicts - LigaMX / Real Madrid / Flamengo
+- test ligamx with different config qualy for concachampions
+- test tournaments in tournaments mode ASIAN CUP (verify the ids before execution):
+
+```
+in the compobj text assign it to a nation and select it in tournament mode.
+
+1667,3,C960,TrophyName_Abbr15_960,1666
+
+change the line above to the line below.
+
+1667,3,C960,TrophyName_Abbr15_960,1505
+
+load tournament mode and select saudi arabia. 
+``` 
+
+***** Test check schedule conflicts - LigaMX / Real Madrid / Flamengo
 - Change dates on "Brasileirao" in december to avoid FIFA CWC date conflict
 - Add more dates to Liga MX in december to avoid FIFA CWC date conflict
 
-***** TESTAR SIMULACAO COPA DO MUNDO EM 2022 - Eliminatorias Asia não está sendo usada, Nova zelandia não é considerada / Setar selecoes no ranking das eliminatorias para gera a copa corretamente.
+***** Enable World Cup in 2022 - Asian qualifying not been used, New Zealand qualifying through CONCACAF Gold Cup.
+- Define a final game for Gold Cup
 
-***** Try to simplify the setup stages to leave some free compids to be used for new competitions or expand existing competitions (maybe this is causing long term crashings) 
+***** Try to simplify the setup stages to leave some free compobjs to be used for new competitions or expand existing competitions (maybe this is causing long term crashings) 
 - Expand CONCACAF CHAMPIONS League to 16 teams
