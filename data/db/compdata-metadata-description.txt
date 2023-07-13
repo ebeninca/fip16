@@ -1,0 +1,529 @@
+Hallo zusammen,
+
+ich lese in ganz vielen Foren oft die Frage, wie man sich eine Liga in Fifa erstellen kann (ich selber habe hier ins Forum selbige Frage gestellt).
+
+Aus diesem Grund möchte ich einfach kurz mit euch ein paar Infos teilen, welche ich bei der Recherche herausgefunden habe, für die ganzen Anfänger im Modden wie ich selber:
+
+1. "Kurz"anleitung zum erstellen einer eigenen Liga:
+
+Ich will mich nicht mit fremden Lorbeeren schmücken. Das folgende ist aus einem anderen Forum von einem Nutzer namens "Rune":
+
+First before, I have to say: YOU CANNOT INSERT NEW CONTENT! REPLACE EXISTING CONTENT ONLY! THIS APPLIES TO LEAGUES, TEAMS, PLAYERS AND GRAPHICS!
+
+Via the Frosty Editor you get to the CompData folder…. There save the files:
+
+- Compobj
+
+- Initeams
+
+- Schedule
+
+- Settings
+
+- tasks
+
+- Weather
+
+
+
+Compobj
+
+Here you regulate the structures of the tournaments and competitions from FIFA. Inserting a complete new tournament is not possible, but replacing an existing one is definitely possible.
+
+Please note that if you add an additional round to a cup, you must also change all other competitions, `cause all stages, rounds and more are numbered here. It’s important for do not lose their connection to each other ... is a very complicated story.
+
+For example, I inserted an additional main round with all 3rd league teams in the DFB Cup (Germany) because teams from the 3rd league only qualified or inserted by chance. So just look at the structure and try to understand!
+
+Initeams
+
+Here you assign the competitions, including all their stations, to the teams.
+
+Schedule
+
+If you replace an existing league and, for example, assign it to a league association (promotion and relegation), it is of course important to create an existing game plan or calendar.
+
+Once you've gotten into it, that's actually one of the easiest changes.
+
+Settings
+
+All competitions and tournaments are managed here. Promotion and relegation, prize money, relegation markings, table sorting, start dates and and and.
+
+Tasks
+
+Important for FIFA to know what to do with the leagues and teams before and after a season.
+
+Weather
+
+Self-explanatory ... here you should choose an existing weather system for the appropriate region of the league
+
+2. Dateien verstehen:
+
+Wenn man sich die oben genannten Dateien anschaut, versteht man vermutlich am Anfang nur Bahnhof. Auch hier bin ich während meiner Recherchen auf einen Beitrag gestoßen:
+
+Hierzu habe ich eine Sammlung von Erklärungen gefunden, die ich euch nicht vorenthalten möchte:
+
+
+Compobj.txt
+
+1. World line (specify the world as an object)
+0,0,FIFA,FIFA,-1
+a) Competition object ID (e.g. 0)
+b) Numeric identifier: 0-FIFA world competition (e.g. 0)
+c) Short description. This can be found in the database fce_competitioninfo/compobjshortdesc (e.g. FIFA)
+d) Description. This can be found in the database fce_competitioninfo/compobjdesc (e.g. FIFA)
+e) Parent ID number: World belongs to no specific ID (e.g. -1)
+
+2. Confederation line (specify the confederation as an object)
+70,1,UEFA,European FA,0
+a) Competition object ID (e.g. 70)
+b) Numeric identifier: 1-confederation competition (e.g. 1)
+c) Short description. This can be found in the database fce_competitioninfo/compobjshortdesc (e.g. UEFA)
+d) Description. This can be found in the database fce_competitioninfo/compobjdesc (e.g. European FA)
+e) Parent ID number: Confederation belongs to FIFA world ID (e.g. 0)
+
+3. Country line (specify the country as an object)
+286,2,AUST,NationName_4,70
+a) Competition object ID (e.g. 286)
+b) Numeric identifier: 2-country competition (e.g. 2)
+c) Short description. This can be found in the database fce_competitioninfo/compobjshortdesc (e.g. AUST)
+d) Description. This can be found in the database fce_competitioninfo/compobjdesc and a full description in the language database LanguageStrings. (e.g. NationName_4)
+e) Parent ID number: Country belongs to confederation ID (e.g. 70)
+
+4. Competition line (specify the competition as an object)
+287,3,C212,TrophyName_Abbr15_212,286
+a) Competition object ID (e.g. 287)
+b) Numeric identifier: 3-competition (e.g. 3)
+c) Short description. This can be found in the database fce_competitioninfo/compobjshortdesc (e.g. C212)
+d) Description. This can be found in the database fce_competitioninfo/compobjdesc and a full description in the language database LanguageStrings. (e.g. TrophyName_Abbr15_212)
+e) Parent ID number: Competition belongs to country ID, confederation ID for champions league type competition or world ID for FIFA competitions (e.g. 286)
+
+5. Stage line (specify the competition stage as an object)
+288,4,S1,FCE_Setup_Stage,287
+304,4,S1,FCE_League_Stage,303
+374,4,S3R,FCE_Round_1_Replay,360
+a) Competition object ID (e.g. 288)
+b) Numeric identifier: 4-stage (e.g. 4)
+c) Short description (e.g. S1) This can be found in the database fce_competitioninfo/compobjshortdesc. Relpay games have an R on the end (e.g. S3R)
+d) Description. This can be found in the database fce_competitioninfo/compobjdesc and a full description in the language database LanguageStrings. Line FCE_Setup_Stage is used only to setup all teams participating in a competition and from there teams advance into the next stage. Imagine setup stage as a bowl from where qualified teams are drawn into a competition. Other lines like FCE_League_Stage and FCE_Round_1 are used for stages with teams directly advancing to that stage or advancing from a previous stage. These stage group games will be played in the competition (e.g. FCE_Setup_Stage)
+e) Parent ID number: Stage belongs to competition ID (e.g. 287)
+
+6. Group line (specify the group of a stage as an object)
+289,5,G1, ,288
+694,5,SG1,FCE_North-West_1,693
+a) Competition object ID (e.g. 289)
+b) Numeric identifier: 5-group (e.g. 5)
+c) Short description. This can be found in the database fce_competitioninfo/compobjshortdesc (e.g. G1)
+d) Description (e.g. none) Groups don’t use description
+e) Parent ID number: Group belongs to stage ID (e.g. 288)
+
+Compids.txt
+
+1. Competition ID line (list of all competition ID in Compoobj.txt)
+71
+a) Competition object ID from Compobj.txt. This file has listed all the competition lines and it is believed to be used to speed up the search when FIFA is running. (e.g. 71)
+
+Standings.txt
+
+1. Team position in groups line (number of teams in a group)
+289,0
+a) Competition Group object ID in Compobj.txt (e.g. 289)
+b) Position in the group 0=1st, 1=2nd,….. (e.g. 0)
+
+Schedule.txt
+
+1. Schedule line (Game Scheduling)
+5,175,1,1,1,1200
+a) Competition Stage object ID or Group object ID in Compobj.txt If it refers to a Stage ID it applies to all groups belonging to that stage (e.g. 5)
+b) Day when to play counting from 25/12/2011. If season start is specified in settings then counting start date is different. For example if start year is specified as 2013 counting starts from 30/12/2012. For 2014 from 29/12/2013, for 2015 from 28/12/2014, for 2016 from 27/12/2015 etc. (e.g. 175)
+c) Round of games played (e.g. 1)
+d) Minimum number of games to play (e.g. 1)
+e) Maximum number of games to play (e.g. 1)
+f) Time when to play (e.g. 1200)
+
+
+Specific Schedule:
+
+Schedule folder (some tournaments have a more specific schedules in individual files in the schedule folder)
+1. Specific schedule file name
+c13_s1_2012
+a) Competition object ID name (e.g. C13)
+b) Competition stage object ID name (e.g. S1)
+c) Schedule is for the year (e.g. 2012)
+
+2. Schedule specific line (Game Scheduling)
+20120818,1500,1,106
+d) Competition date year/month/day (e.g. 20120817)
+e) Time when to play (e.g. 1500)
+f) Home team ID (e.g. 1)
+g) Away team ID (e.g. 106)
+
+Advancement.txt
+
+1. Advancement line (description of teams advancing in a competition)
+297,1,299,2
+a) Competition Group object ID moving from in Compobj.txt (e.g. 297)
+b) Rank in the group that is moving from (e.g. 1)
+c) Competition Group object ID moving to in Compobj.txt (e.g. 299)
+d) Rank in the group that is moving to (e.g. 2)
+
+Initteams.txt
+
+1. Last year team finish line (Specifies where some teams finished last year. Useful for
+competitions where in the first season the last year’s winner need to participate)
+303,0,191
+a) Competition object ID in Compobj.txt (e.g. 303)
+b) Last year’s finishing position 0=1st, 1=2nd,….. (e.g. 0)
+c) Team ID from the database (e.g. 191)
+
+Weather.txt
+
+1. Weather line (Weather settings for a country)
+286,1,40,35,25,60,1600,1700
+a) Country object ID in Compobj.txt (e.g. 286)
+b) Month in a year (e.g. 1)
+c) Percentage probability of having a dry day (e.g. 40)
+d) Percentage probability of rain falling (e.g. 35)
+e) Percentage probability of snow falling (e.g. 25)
+f) Percentage probability of having an overcast day (e.g. 60)
+g) Sunset time (e.g. 1600)
+h) Night time (e.g. 1700)
+
+Tasks.txt
+
+1. Fill with a team line (Add a team to a competition)
+1381,start,FillWithTeam,1383,1,687,0
+a) Competition object ID in Compobj.txt (e.g. 1381)
+b) Task is to happen at the start (e.g. start)
+c) Task description add team to a competition (e.g. FillWithTeam)
+d) Group line ID in Compobj.txt (e.g. 1383)
+e) Task order numbering for this type of line starts with 1 (e.g. 1)
+f) Team ID to add to the competition (e.g. 687)
+g) Parameter always equal 0 (e.g. 0)
+
+2. Fill with a special team line (Add a special team to a competition. The special teams can be
+from the rest of the world league)
+121,start,FillFromSpecialTeams,125,2,0,0
+a) Competition object ID in Compobj.txt (e.g. 121)
+b) Task is to happen at the start (e.g. start)
+c) Task description add a special team to a competition (e.g. FillFromSpecialTeams)
+d) Group line ID in Compobj.txt (e.g. 125)
+e) Number of special teams to add. Special team IDs are specified in settings.txt (e.g. 2)
+f) Parameter always equal 0 (e.g. 0)
+g) Parameter always equal 0 (e.g. 0)
+
+3. Fill with teams from a league line (Add league teams to a competition)
+303,start,FillFromLeague,305,80,0,0
+a) Competition object ID in Compobj.txt (e.g. 303)
+b) Task is to happen at the start (e.g. start)
+c) Task description add all teams to a competition from a league (e.g. FillFromLeague)
+d) Group line ID in Compobj.txt (e.g. 305)
+e) League ID. This can be found in the database. (e.g. 80)
+f) Parameter always equal 0 (e.g. 0)
+g) Parameter always equal 0 (e.g. 0)
+
+4. Fill with teams from a league with maximum specified teams line (Add league teams to a
+competition with a maximum teams from the country specified)
+185,start,FillFromLeagueMaxFromCountry,189,13,1,4
+a) Competition object ID in Compobj.txt (e.g. 185)
+b) Task is to happen at the start (e.g. start)
+c) Task description add some teams from a league to a competition with a maximum
+number of teams from the country (e.g. FillFromLeagueMaxFromCountry)
+d) Group line ID in Compobj.txt (e.g. 189)
+e) League ID. This can be found in the database. (e.g. 13)
+f) Number of teams from the league in order starting from the first position (e.g. 1)
+g) Maximum number of teams from this country (e.g. 4)
+
+5. Fill with teams from a competition table line (Add teams from one competition to another
+competition. This table has to be specified in Inittems.txt)
+118,start,FillFromCompTable,120,185,1,0
+a) Competition object ID in Compobj.txt (e.g. 118)
+b) Task is to happen at the start (e.g. start)
+c) Task description add a team to a competition from another competition (e.g.
+FillFromCompTable)
+d) Group line ID in Compobj.txt where to put the teams (e.g. 120)
+e) Competition object ID form where teams to come from in Initteams.txt (e.g. 185)
+f) Number of teams to the competition (e.g. 1)
+g) Parameter always equal 0 (e.g. 0)
+
+6. Fill with teams from a competition table and have a backup league (Add teams as a backup
+from a league. For example one team qualifies through two competitions and backup team
+is required to fill the spot. This table has to be specified in Inittems.txt)
+185,start,FillFromCompTableBackupLeague,188,1261,5 3,1
+a) Competition object ID in Compobj.txt (e.g. 185)
+b) Task is to happen at the start (e.g. start)
+c) Task description add a team to a competition from a competition and have a backup
+league spot (e.g. FillFromCompTableBackupLeague)
+d) Group line ID in Compobj.txt where to put the teams (e.g. 188)
+e) Competition object ID form where teams to come from in Initteams.txt (e.g. 1261)
+f) Backup League ID where the teams to come from in case backup is needed. This can be
+found in the database. (e.g. 53)
+g) Number of teams to the competition (e.g. 1)
+
+7. Fill with teams from a competition table backup line (Add teams as a backup solution. For
+example one team qualifies through two competitions and backup team is required to fill
+the spot. This table has to be specified in Inittems.txt)
+1026,start,FillFromCompTableBackup,1028,1029,1083, 1
+a) Competition object ID in Compobj.txt (e.g. 1026)
+b) Task is to happen at the start (e.g. start)
+c) Task description add a team to a competition as backup to a league spot (e.g.
+FillFromCompTableBackup)
+d) Group line ID in Compobj.txt where to put the team (e.g. 1028)
+e) Competition object ID form where teams to come from in Initteams.txt (e.g. 1029)
+f) Backup Competition object ID from Initteams.txt where the teams to come from in case
+backup is needed. (e.g. 1083)
+g) Number of teams to the competition (e.g. 1)
+
+8. Update table (Update table of teams at the end of the competition for the next season that
+are drawn from Initteams.txt in the first season)
+303,end,UpdateTable,303,305,5,5
+a) Competition object ID in Compobj.txt (e.g. 303)
+b) Task is to happen at the end (e.g. end)
+c) Task description update the table (e.g. UpdateTable)
+d) Competition object ID in initteams.txt (e.g. 303)
+h) Group object ID from where the team is to replace the team from initteams.txt (e.g. 305)
+e) Group object ID position from where the team is to replace the team from initteams.txt
+(e.g. 5)
+f) Position of the updated team to replace the team from initteams.txt (e.g. 5)
+
+9. Update league table (Update table at the end of the competition for the next season)
+303,end,UpdateLeagueTable,304,80,0,0
+g) Competition object ID in Compobj.txt (e.g. 303)
+h) Task is to happen at the end (e.g. end)
+i) Task description update the league table (e.g. UpdateLeagueTable)
+j) League line ID in Compobj.txt (e.g. 304)
+k) League ID. This can be found in the database. (e.g. 80)
+l) Parameter always equal 0 (e.g. 0)
+m) Parameter always equal 0 (e.g. 0)
+
+Settings.txt
+
+Typical compobj attributes (Defining the competition object attributes)
+0,rule_numsubsbench,7
+a) Competition object ID in Compobj.txt (e.g. 0)
+b) Attribute description. (e.g. rule_numsubsbench)
+c) Attribute value (e.g. 7)
+
+1. World object attributes (These attributes are passed down to all confederations, all
+countries, all competitions, all competition stages unless other values are specifically
+applied)
+0,comp_type,NONE (Competition type none)
+0,rule_bookings,on (Bookings are on)
+0,rule_offsides,on (Offside is on)
+0,rule_injuries,on (Injuries are on)
+0,rule_numsubsbench,7 (Number of subs on bench 7. Can be 5 or 7)
+0,rule_numsubsmatch,3 (Number of subs in a match 3)
+0,rule_suspension,0 (Rule suspension set to Competition object ID 0)
+0,rule_numyellowstored,5 (Number of yellows stored is 5 before the ban. Usually 3, 4 or 5)
+0,rule_numgamesbanredmax,1 (Maximum 1 game ban for red)
+0,rule_numgamesbanredmin,1 (Minimum 1 game ban for red)
+0,rule_numgamesbandoubleyellowmax,1 (Max 1 game ban for double yellows in match)
+0,rule_numgamesbandoubleyellowmin,1 (Min 1 game ban for double yellows in match)
+0,rule_numgamesbanyellowsmax,1 (Maximum 1 game ban for stored yellows)
+0,rule_numgamesbanyellowsmin,1 (Minimum 1 game ban for stored yellows)
+0,standings_pointswin,3 (3 points for win)
+0,standings_pointsdraw,1 (1 point for draw)
+0,standings_pointsloss,0 (0 point for loss)
+0,match_matchimportance,75 (Match importance set to 75. Can be 0-100)
+0,match_stagetype,LEAGUE (Stage type is league. Setup, League, Ko1 leg, Ko 2 legs)
+0,match_matchsituation,LEAGUE (Stage description is league. League, Final, Semi, Group, …)
+0,nation_id,-1 (Nation ID set to -1. This is none)
+0,asset_id,-1 (Asset ID set to -1. This is none)
+0,match_endruleleague,END (After league game end if draw)
+0,match_endruleko1leg,ET (After 1 leg knockout draw next extra time)
+0,match_endruleko1leg,PENS (After 1 leg knockout draw next penalties)
+0,match_endruleko2leg1,END (After 2 leg first match end if draw)
+0,match_endruleko2leg2,AGG (After 2 leg second match draw next winner on aggregate)
+0,match_endruleko2leg2,AWAY (After 2 leg second match draw next away goal rule)
+0,match_endruleko2leg2,ET (After 2 leg second match draw next extra time)
+0,match_endruleko2leg2,ET_AWAY (After 2 leg second match extra time next away goal)
+0,match_endruleko2leg2,PENS (After 2 leg second match draw next penalties)
+0,match_endrulefriendly,END (After friendly game end if draw)
+0,info_prize_money,0 (Money for wining. Min 2000, Max 16000000)
+0,info_prize_money_drop,0 (Money drop for loosing. Min 5, Max 100)
+0,standings_sort,POINTS (Table sorting by points)
+0,standings_sort,GOALDIFF (Table sorting next by goal difference)
+0,standings_sort,GOALSFOR (Table sorting next by goals scored)
+0,standings_sort,WINS (Table sorting next by number of games won)
+0,schedule_seasonstartmonth,AUG (Season starts in August)
+0,schedule_year_start,2011 (Competition to start in 2011)
+0,schedule_year_offset,1 (Competition runs every year)
+0,schedule_friendlydaysbetweenmin,6 (Minimum 6 days between two friendlies)
+0,schedule_friendlydaysbefore,6 (Minimum 6 days before friendly game)
+0,schedule_internationaldependency,1 (Schedule is dependent on international games.
+1=Yes, 0=No. Only International competitions have this reset to 0)
+
+2. Confederation object attributes (Normally only these lines are used to overwrite the world
+attributes. Others can be also included)
+70,schedule_seasonstartmonth,JUL (Season starts in July)
+70,match_matchimportance,30 (Match importance set to 30. Can be 0-100)
+
+3. Country object attributes (Normally only these lines are used to overwrite the world and
+confederation attributes. Others can be also included )
+286,nation_id,4 (Nation ID set to 4. This is Austria from the databse)
+286,rule_suspension,286 (Rule suspension set to Competition object ID 286. Any suspension
+rules set after this will overwrite the world line attributes)
+
+4. Competition object attributes (Normally only these lines are used to overwrite the world,
+confederation and country attributes. Others can be also included)
+a) League
+303,asset_id,80 (League asset ID is 80)
+303,comp_type,LEAGUE (Competition type is league)
+303,schedule_friendlydaysbefore,3 (Minimum 3 days before friendly game)
+303,schedule_friendlydaysbetweenmin,2 (Minimum 2 days between two friendlies)
+303,match_matchimportance,17 (Match importance set to 17)
+b) League with promotion and relegation
+767,schedule_forcecomp,776 (Link to promotion playoff Competition ID)
+767,info_league_promo,13 (Promotion to Competition ID. If no promotion line not used)
+767,info_league_releg,60 (Relegation to Competition ID. If no relegation line not used)
+767,asset_id,14 (League asset ID is 14)
+767,comp_type,LEAGUE (Competition type is league)
+767,schedule_friendlydaysbefore,3 (Minimum 3 days before friendly game)
+767,schedule_friendlydaysbetweenmin,2 (Minimum 2 days between two friendlies)
+767,match_matchimportance,17 (Match importance set to 17)
+c) Playoff
+776,info_league_promo,13 (Promotion to Competition ID.)
+776,asset_id,414 (League asset ID is 414)
+776,comp_type,PLAYOFF (Competition type is playoff)
+776,match_matchimportance,100 (Match importance set to 100)
+d) Cup
+287,asset_id,212 (Cup asset ID is 212)
+287,comp_type,CUP (Competition type is cup)
+287,match_matchimportance,22 (Match importance set to 22)
+e) Supercup
+357,asset_id,228 (Supercup asset ID is 228)
+357,comp_type,SUPERCUP (Competition type is supercup)
+357,match_matchimportance,28 (Match importance set to 28)
+f) International Cup (e.g. FIFA World Cup)
+1,asset_id,999 (International cup asset ID is 999)
+1,comp_type,INTERCUP (Competition type is international cup)
+1,schedule_seasonstartmonth,MAY (Season starts in May)
+1,schedule_year_start,2013 (Competition to start in 2013)
+1,schedule_year_offset,4 (Competition runs every 4 years)
+1,schedule_internationaldependency,0 (International competitions are 0-notdependent)
+1,match_matchimportance,100 (Match importance set to 100)
+g) International Cup Qualifiers (e.g. FIFA World Cup qualifiers)
+71,asset_id,991 (International qualifier asset ID is 991)
+71,comp_type,INTERQUAL (Competition type is international qualifier)
+71,schedule_seasonstartmonth,JUL (Season starts in July)
+71,schedule_year_start,2012 (Competition to start in 2012)
+71,schedule_year_offset,4 (Competition runs every 4 years)
+71,schedule_internationaldependency,0 (International comps. are 0-not dependent)
+71,match_matchimportance,100 (Match importance set to 100)
+71,schedule_use_dates_comp,1614 (All Interqualif schedule use comp. 1614 dates)
+h) Other lines
+185,schedule_checkconflict,1 (Checks for conflict and Fill teams from Backup league or
+backup competition. Can be found in tasks.txt)
+1314,standings_sort,H2HPOINTS (Table sorting by head to head points)
+1314,standings_sort,H2HGOALDIFF (Table sorting by head to head goal difference)
+1314,standings_sort,H2HGOALSFOR (Table sorting by head to head goals scored)
+
+5. Stage object attributes (Normally only these lines are used to overwrite the world,
+confederation and country attributes. Others can be also included)
+a) Setup
+308,match_stagetype,SETUP (It is a setup stage. Setup is described Compobj.txt )
+b) League
+985,match_matchsituation,LEAGUE (The stage is a league)
+985,info_prize_money,13000000 (Money for winning the stage)
+985,info_prize_money_drop,10 (Money loss for being eliminated)
+c) Group
+226,match_stagetype,LEAGUE (This is a league type stage. Used only for group stages)
+226,match_matchsituation,GROUP (This is a group stage)
+226,info_prize_money,800000 (Money for winning the stage)
+226,info_prize_money_drop,100 (Money loss for being eliminated)
+226,advance_maxteamsassoc,1 (Maximum teams advancing per association)
+226,info_color_slot_adv_group,1 (Advancing slot position in group 1 colored)
+226,info_color_slot_adv_group,2 (Advancing slot position in group 2 colored)
+226,advance_random_draw_event,1 (Advancing is a random event)
+d) Cup
+310,match_stagetype,KO1LEG (The stage is 1 leg knockout. It can also be KO2LEGS)
+310,match_matchsituation,ROUNDX (This is a round of X teams knockout. It can also be
+QUALIFY, ROUNDX, QUARTER, SEMI, THIRDPLACE and FINAL)
+310,info_prize_money,31000 (Money for winning the stage)
+310,info_prize_money_drop,100 (Money loss for being eliminated)
+e) Other lines
+778,advance_calccompavgs,1 (Advancing teams as per calculated competition average)
+244,advance_maxteamsgroup,1 (Maximum teams advancing per group)
+244,advance_maxteamsstageref,226 (Maximum teams stage reference)
+427,advance_randomdraw,1 (Advancing is a random event. Used only for Stage object
+ID lines FCE_XXX_Draw)
+429,advance_random_draw_event,1 (Advancing is a random event)
+374,advance_standingskeep,365 (Advance the standings from previous stage. In replay
+situations win remain a win and only draws are replayed)
+1419,advance_standingsrank,1406 (Advance the ranking from previous stage)
+186,info_special_team_id,393 (Setup Stage special team ID if in the competition)
+183,match_stadium,157 (Set the stadium ID for the stage games)
+374,schedule_matchreplay,1 (Specifies that this is a replay schedule in a competitions
+that after a draw game ends and a replay game is played)
+1448,schedule_reversed,1 (reverse schedule of the stage e.g. Calausura after Apertura)
+1315,schedule_year_real,2012 (There is a real schedule in data 1. compdata/schedules)
+1433,standings_checkrank,1431 (In situations like 1 v 4, 2 v 3 get the ranking from 1431)
+239,standings_sort,TEAMRATING (Stage sorted by team rating)
+1382,standings_sort,PREVRANK (Stage sorted by previous year team ranking)
+
+6. Group object attributes (Normally only these lines are used. Others can be also included)
+a) League, Group, Cup
+245,num_games,2 (Number of games is 2 to be played between two teams)
+f) Other lines
+333,advance_pointskeep,330 (Advance points from the previous group object games)
+333,advance_pointskeeppercentage,50 (Advance 50% points from the previous group
+object games)
+1497,advance_standingsrank,1491 (Advance the ranking from previous group object)
+352,match_stadium,180 (Set the stadium ID for the games)
+220,standings_sort,TEAMRATING (Group sorted by team rating)
+220,standings_sort,PREVRANK (Group sorted by previous team rating)
+766,info_slot_champ,1 (Champion slot is position 1)
+766,info_color_slot_champ,1 (Champion slot 1 colored)
+769,info_slot_promo,2 (Promotion slot position 2 - direct promo)
+769,info_color_slot_promo,2 (Promotion slot position 2 colored - direct promo)
+769,info_slot_promo_poss,3 (Possible promotion slot position 3 - playoff style)
+769,info_color_slot_promo_poss,3 (Possible promotion slot position 3 colored - playoff )
+766,info_slot_releg,20 (Relegation slot is position 20 - direct relegation)
+766,info_color_slot_releg,20 (Relegation slot posititon20 colored - direct relegation)
+986,info_slot_releg_poss,16 (Possible relegation slot is position 16 - playoff style)
+986,info_color_slot_releg_poss,16 (Possible relegation slot posititon16 colored - playoff)
+766,info_color_slot_champ_cup,2 (Euro Champions cup slot position 2 colored)
+766,info_color_slot_euro_league,5 (Euro league slot position 5 colored)
+1408,info_color_slot_adv_group,5 (Advancing slot position in group 5 colored)
+
+7. Some other object attributes (There are many attributes but will only analyze some that are
+very important)
+765,schedule_year_real,2012 (stage object ID has a specific schedule file in the schedule
+folder and it is for the year 2012)
+
+Language Database/LanguageStrings (e.g. eng_us)
+
+Hyundai A-League / -1827592254 / TrophyName_351 (Full name of the competition / hash id can be
+calculated with DB Master12 / trophy name with assed ID used for the competitions)
+
+A-League / -1430812951 / TrophyName_Abbr15_351 (Short name of the competition / hash id can
+be calculated with DB Master12 / trophy name with assed ID used for the competitions)
+
+Graphics:
+
+Editor Tool!!!
+
+Euroseededteams.csv (This is where the first year of European club competition teams are specified.
+
+Next year will be drawn as per the domestic competition finishing position. File can be opened and
+modified wit Excel)
+a) CompId - is the competition ID name CC is for Champions Cup as long EL is Euro League
+(e.g. CC)
+b) GroupId- is the Group ID number. (e.g. 1)
+c) TeamId1-is the team ID in position 1 that can be found in the database (e.g. 5)
+d) TeamId2-is the team ID in position 2 that can be found in the database (e.g. 234)
+e) TeamId3-is the team ID in position 3 that can be found in the database (e.g. 22)
+f) TeamId4-is the team ID in position 4 that can be found in the database (e.g. 573)
+
+
+Das Tutorial zu den ganzen Dateien ist von einer alten Fifa Version. Dementsprechend kann es sein das sich eventuell an gewissen Stellen etwas verändert hat.
+
+Bevor jemand Frage zu gewissen Modding spezifischen Sachen hat sollte gesagt sein: ich selber stehe grade noch ganz am Anfang vom Modding. Ich bring mir all das oben gerade noch selber bei. Allerdings hatte ich unglaublich Probleme überhaupt mal mit so etwas anzufangen weil ich nicht gewusst habe, wo ich Anfangen soll, was ich mit gewissen Dateien anfangen soll und ähnliches.
+
+Deswegen wollte ich euch an meinen Recherchen teilhaben lassen. Ich hoffe damit könnt ihr alle verwirklichen, was ihr euch vorgenommen habt.
+
+Zur Info: Alle oben genannten Infos habe ich nicht selber herausgefunden sondern lediglich aus anderen Foren zusammengesucht.
+Falls die Erklärungen zu den Compdata Dateien zu unübersichtlich sind, habe ich eine .rar Datei angehängt mit allen PDF's wo nochmal alles etwas übersichtlicher erklärt ist.
+
+Viel Spaß beim Modden
+
+Grüße 

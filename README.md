@@ -20,8 +20,12 @@ Edited with CM16 v2.0 beta 2
 
 ## Fixes/modifications:
 
+v62.003
+- AFCON and AFC Cup periodicity of 2 years (Only the results of the closer one before the WC will be used to qualify)
+- BRAZ calender overhaul, avoided all date conflicts between championships.
+
 v62.002
-- "Check Schedule Conflicts" enable for all continental clubs competitions and FIFA CWC.
+- "Check Schedule Conflicts" enabled for all continental clubs competitions and FIFA CWC.
 - Austria: changed december league dates
 - Belgium: changed cup and league december dates
 - Added more dates to Egypt (WE PL) to avoid FIFA CWC date conflict
@@ -58,20 +62,27 @@ v62.001
 
 ## Future Features:
 
+** VERIFICAR SE TODOS AS LIGAS MODIFICADAS TEM TODOS OS JOGOS SENDO REALIZADOS, CONFLITOS DE CALENDARIO FAZENDO PARTIDAS SUMIREM
+
+- Do a better use of the teams from Rest of the world in continental cups.
 - test ligamx with different config qualy for concachampions
 - test tournaments in tournaments mode ASIAN CUP (verify the ids before execution):
 
 ```
 in the compobj text assign it to a nation and select it in tournament mode.
-
-1667,3,C960,TrophyName_Abbr15_960,1666
+1667,3,C960,TrophyName_Abbr15_950,1666
 
 change the line above to the line below.
+1667,3,C960,TrophyName_Abbr15_950,1505
 
-1667,3,C960,TrophyName_Abbr15_960,1505
+settings.txt Remove INTERCUP parameters manually (First year, Peridiocity, Start Month)
+850,asset_id,950
+850,comp_type,CUP
+850,match_matchimportance,100
 
 load tournament mode and select saudi arabia. 
 ``` 
+
 
 ***** Test check schedule conflicts - LigaMX / Real Madrid / Flamengo
 - Change dates on "Brasileirao" in december to avoid FIFA CWC date conflict
@@ -82,3 +93,4 @@ load tournament mode and select saudi arabia.
 
 ***** Try to simplify the setup stages to leave some free compobjs to be used for new competitions or expand existing competitions (maybe this is causing long term crashings) 
 - Expand CONCACAF CHAMPIONS League to 16 teams
+- Libertadores with 32 teams

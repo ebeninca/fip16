@@ -2921,7 +2921,7 @@
 1374,comp_type,INTERCUP
 1374,schedule_seasonstartmonth,MAY
 1374,schedule_year_start,2023
-1374,schedule_year_offset,4
+1374,schedule_year_offset,2
 1374,schedule_internationaldependency,0
 1374,match_matchimportance,75
 1375,match_stagetype,SETUP
@@ -3170,9 +3170,13 @@
 1488,advance_standingskeep,1485
 1490,match_stagetype,KO2LEGS
 1490,match_matchsituation,FINAL
+1490,match_stadium,192
+1490,match_stadium,197
+1490,match_stadium,181
+1490,match_stadium,261
 1490,info_prize_money,5366940
 1490,info_prize_money_drop,50
-1491,num_games,2
+1491,num_games,1
 1491,info_slot_champ,1
 1492,nation_id,54
 1492,rule_suspension,1492
