@@ -22,10 +22,14 @@ Edited with CM16 v2.0 beta 2
 
 v62.003
 - AFCON and AFC Cup periodicity of 2 years (Only the results of the closer one before the WC will be used to qualify)
-- BRAZ calender overhaul, avoided all date conflicts between championships.
+- BRAZ/ARGE calendar overhaul, avoided all date conflicts between championships
+- Removed BELG Leagues Relegation Round, not being used. Adjusted final league date to avoid euro conflicts
+- IREL removed confict date with euro clubs calendar
+- NORW fixed end of the season in the first month
+- COLB adjusted dates conflicting with FIFA CWC
 
 v62.002
-- "Check Schedule Conflicts" enabled for all continental clubs competitions and FIFA CWC.
+- "Check Schedule Conflicts" enabled for all continental clubs competitions and FIFA CWC
 - Austria: changed december league dates
 - Belgium: changed cup and league december dates
 - Added more dates to Egypt (WE PL) to avoid FIFA CWC date conflict
@@ -37,7 +41,7 @@ v62.002
 - Fixed broken "Supercopa de Espana", TBD error. Setup Stage G1, Ranking table "Copa del Rey" adjusted
 - Fixed CONCACAF Gold Cup dates, bigger gap between games
 - Removed ENGL PL / FRAN L1 / GERM B1 / ITAL A december dates that conflicts with FIFA CWC
-- Reduced number of dates on IREL League to avoid "end of the season" in the beginning.
+- Reduced number of dates on IREL League to avoid "end of the season" in the beginning
 - SCOT/SWIT/TURK/ROMA ajusted dates
 - Big overhaul on CONCACAF / MEXI / UNIT calendar and clubs that qualifies to ConcaChampions
 
@@ -61,6 +65,9 @@ v62.001
 
 
 ## Future Features:
+
+Verify austria relegation round
+Try code 4004 (random) for AFCON
 
 ** VERIFICAR SE TODOS AS LIGAS MODIFICADAS TEM TODOS OS JOGOS SENDO REALIZADOS, CONFLITOS DE CALENDARIO FAZENDO PARTIDAS SUMIREM
 
