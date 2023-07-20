@@ -27,6 +27,10 @@ v62.003
 - IREL removed confict date with euro clubs calendar
 - NORW fixed end of the season in the first month
 - COLB adjusted dates conflicting with FIFA CWC
+- Fixed POLA cup semifinal missing one date
+- Adjusted SCOT league qualification table colors
+- Small adjustments on SWED cup calendar to avoid euro dates conflict 
+- SWIT/TURK/RUSS/ROMA removed unused dates
 
 v62.002
 - "Check Schedule Conflicts" enabled for all continental clubs competitions and FIFA CWC

@@ -2154,6 +2154,12 @@
 1073,match_stagetype,LEAGUE
 1073,match_matchsituation,LEAGUE
 1074,num_games,3
+1074,info_color_slot_adv_group,1
+1074,info_color_slot_adv_group,2
+1074,info_color_slot_adv_group,3
+1074,info_color_slot_adv_group,4
+1074,info_color_slot_adv_group,5
+1074,info_color_slot_adv_group,6
 1074,info_slot_releg_poss,12
 1075,match_stagetype,LEAGUE
 1075,match_matchsituation,LEAGUE
@@ -2466,6 +2472,7 @@
 1183,info_slot_champ,1
 1184,asset_id,268
 1184,comp_type,CUP
+1184,match_matchimportance,25
 1185,match_stagetype,SETUP
 1187,match_stagetype,KO2LEGS
 1187,match_matchsituation,ROUNDX
