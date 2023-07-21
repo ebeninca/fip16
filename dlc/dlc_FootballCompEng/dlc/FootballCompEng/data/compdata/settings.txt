@@ -2752,8 +2752,10 @@
 1307,match_matchsituation,QUARTER
 1307,info_prize_money,50000
 1307,info_prize_money_drop,50
+1308,num_games,1
 1309,num_games,1
 1310,num_games,1
+1311,num_games,1
 1312,num_games,1
 1313,num_games,1
 1314,match_stagetype,SETUP

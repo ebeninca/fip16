@@ -31,6 +31,9 @@ v62.003
 - Adjusted SCOT league qualification table colors
 - Small adjustments on SWED cup calendar to avoid euro dates conflict 
 - SWIT/TURK/RUSS/ROMA removed unused dates
+- MEXI/UNIT/BRAZ/ARGE avoiding conflicts with International friendly dates
+- COLB removed extra dates on Apertura, avoid conflicts with International friendly dates
+- CHIL removed extra unused dates
 
 v62.002
 - "Check Schedule Conflicts" enabled for all continental clubs competitions and FIFA CWC
@@ -70,7 +73,6 @@ v62.001
 
 ## Future Features:
 
-Verify austria relegation round
 Try code 4004 (random) for AFCON
 
 ** VERIFICAR SE TODOS AS LIGAS MODIFICADAS TEM TODOS OS JOGOS SENDO REALIZADOS, CONFLITOS DE CALENDARIO FAZENDO PARTIDAS SUMIREM
@@ -94,14 +96,9 @@ settings.txt Remove INTERCUP parameters manually (First year, Peridiocity, Start
 load tournament mode and select saudi arabia. 
 ``` 
 
-
-***** Test check schedule conflicts - LigaMX / Real Madrid / Flamengo
-- Change dates on "Brasileirao" in december to avoid FIFA CWC date conflict
-- Add more dates to Liga MX in december to avoid FIFA CWC date conflict
-
 ***** Enable World Cup in 2022 - Asian qualifying not been used, New Zealand qualifying through CONCACAF Gold Cup.
 - Define a final game for Gold Cup
 
-***** Try to simplify the setup stages to leave some free compobjs to be used for new competitions or expand existing competitions (maybe this is causing long term crashings) 
+***** Try to simplify the setup stages (maybe this is causing long term crashings) to leave some free compobjs to be used for new competitions or expand existing competitions 
 - Expand CONCACAF CHAMPIONS League to 16 teams
-- Libertadores with 32 teams
+- Libertadores with 32 teams (there's enough south american teams in Rest of the world for it)
