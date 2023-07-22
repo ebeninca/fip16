@@ -10,6 +10,7 @@ Edited with CM16 v2.0 beta 2
 3. Open CM16 editor, load the files and Regenerate BH (maybe it's not necessary). 
 4. Copy and replace the files in this repository on your FIFA 16 root folder.
 5. Open CM16 editor again load the files and use the Regenerate BH function.
+6. Start a new career (it doesn't work with an existing one)
 
 
 ## Selected Cups on fip16 tournaments manager
