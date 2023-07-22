@@ -17,6 +17,10 @@ Edited with CM16 v2.0 beta 2
 - Extra tournaments minus ROU,SUI,IRL
 - Compids 99/99
 
+### Current used compdata space:
+
+- Compids 99/99
+- Compobj 1800/1809
 
 ## Fixes/modifications:
 
@@ -34,6 +38,7 @@ v62.003
 - MEXI/UNIT/BRAZ/ARGE avoiding conflicts with International friendly dates
 - COLB removed extra dates on Apertura, avoid conflicts with International friendly dates
 - CHIL removed extra unused dates
+- **AFC Champions League expanded to 24 teams using Rest of the world (China,Japan,UAE,India), 6 groups + Round of 16**
 
 v62.002
 - "Check Schedule Conflicts" enabled for all continental clubs competitions and FIFA CWC
@@ -68,12 +73,14 @@ v62.001
 
 - v62 CAF Real Madrid (as ukraine national team manager): ukraine isn't in the euro qualifiers competition
 - v62 CAF Al Ahly (as saudi arabia national team manager): shows "Copa America" table instead of "AFC Asian Cup" table. Not crashing, competition still playable. (not showing on original version too)
-- v62 CAF Real Madrid (as USA national team manager): FIFA CWC, Usan Hyundai always winning AFC Champions League? something broken?
+- v62 CAF Real Madrid (as USA national team manager): FIFA CWC, Ulsan Hyundai always winning AFC Champions League? something broken?
 
 
 ## Future Features:
 
-Try code 4004 (random) for AFCON
+- Ajust prize money for all competitions
+- Try code 4004 (random) for AFCON
+
 
 ** VERIFICAR SE TODOS AS LIGAS MODIFICADAS TEM TODOS OS JOGOS SENDO REALIZADOS, CONFLITOS DE CALENDARIO FAZENDO PARTIDAS SUMIREM
 
@@ -96,9 +103,10 @@ settings.txt Remove INTERCUP parameters manually (First year, Peridiocity, Start
 load tournament mode and select saudi arabia. 
 ``` 
 
-***** Enable World Cup in 2022 - Asian qualifying not been used, New Zealand qualifying through CONCACAF Gold Cup.
+***** Enable World Cup in 2022 - Asian qualifying not been used, New Zealand qualifying through CONCACAF Gold Cup. Adjust the number of slots per continent.
 - Define a final game for Gold Cup
 
 ***** Try to simplify the setup stages (maybe this is causing long term crashings) to leave some free compobjs to be used for new competitions or expand existing competitions 
+- Expand AFC Champions League
 - Expand CONCACAF CHAMPIONS League to 16 teams
 - Libertadores with 32 teams (there's enough south american teams in Rest of the world for it)
