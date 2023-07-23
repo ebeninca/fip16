@@ -8,7 +8,7 @@ Edited with CM16 v2.0 beta 2
 1. Install the fip16 v62 mod on your FIFA 16 (https://dl.fifa-infinity.com/fifa-16/fifa-infinity-patch-16-v6/).
 2. Open fip16 version manager, select v62 CAF and apply 
 3. Open CM16 editor, load the files and Regenerate BH (maybe it's not necessary). 
-4. Copy and replace the files in this repository on your FIFA 16 root folder.
+4. Download (Code >> Download ZIP) and replace the files in this repository on your FIFA 16 root folder.
 5. Open CM16 editor again load the files and use the Regenerate BH function.
 6. Start a new career (it doesn't work with an existing one)
 
@@ -43,6 +43,7 @@ v62.003
 - **AFC Champions League expanded to 24 teams using Rest of the world (China,Japan,UAE,India), 6 groups + Round of 16**
 - Added extra clubs to CONCAChampions and Libertadores setup stage (preparing to expand). 
 - Set Ranking Tables (Winners) of all Sulamerican leagues.
+- Manually removed num_games=1 in settings.txt for International Friendlies to fix duplicated games
 
 v62.002
 - "Check Schedule Conflicts" enabled for all continental clubs competitions and FIFA CWC
@@ -69,7 +70,7 @@ v62.001
 
 ## Issues: 
   
-- Same national teams playing 2 games in the same day.
+- Avoid access Intl Friendly/G1 screen on CM16 because it creates a num_games=1 line in settings.txt which duplicate games.
  
 - Canadian clubs on MLS doesn't participate in the US Open Cup, no further action for now.
 - A chance of conflict on FIFA CWC exists between the host team and the winners of AFC / CAF Champions league being the same teams, it's very rare, doesn't crash, cup still playable, no further action for now.
