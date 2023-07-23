@@ -26,6 +26,10 @@ Edited with CM16 v2.0 beta 2
 
 ## Fixes/modifications:
 
+v62.004
+- Deleted Polonese Cup to have enough free compobj to use in other expansions
+- FIFA CWC Setup Stage 2, trying to avoid a rare TBD when the host team and the AFC/CAF champions are the same.
+
 v62.003
 - AFCON and AFC Cup periodicity of 2 years (Only the results of the closer one before the WC will be used to qualify)
 - BRAZ/ARGE calendar overhaul, avoided all date conflicts between championships
@@ -52,10 +56,10 @@ v62.002
 - Added more dates to Egypt (WE PL) to avoid FIFA CWC date conflict
 - Ireland: changed dates avoid FIFA CWC date conflict
 - Netherlands/Norway/Poland: changed dates avoiding conflicts
-- Fixed TBD on CM16 Europa League Setup Stage (Portuguese League champion)
+- **Fixed TBD error: CM16 Europa League Setup Stage (Portuguese League champion)**
 - African Cup of Nations first year in 2023, kept periodicity in 2 years
 - Portugal/Spain changed december games dates to avoid conflicts
-- Fixed broken "Supercopa de Espana", TBD error. Setup Stage G1, Ranking table "Copa del Rey" adjusted
+- **Fixed TBD error: Broken "Supercopa de Espana". Setup Stage G1, Ranking table "Copa del Rey" adjusted**
 - Fixed CONCACAF Gold Cup dates, bigger gap between games
 - Removed ENGL PL / FRAN L1 / GERM B1 / ITAL A december dates that conflicts with FIFA CWC
 - Reduced number of dates on IREL League to avoid "end of the season" in the beginning
@@ -63,8 +67,8 @@ v62.002
 - Big overhaul on CONCACAF / MEXI / UNIT calendar and clubs that qualifies to ConcaChampions
 
 v62.001
-- CONCACAF champions setup stage G2: winners ligaMX and MLS
-- FIFA CWC G3: Winner Saudi/RSL + Special Teams Hosts (Japan, Marrocos, UAE) + Stadiums
+- **Fixed TBD error: CONCACAF champions setup stage G2: winners ligaMX and MLS**
+- **Fixed TBD error: FIFA CWC G3: Winner Saudi/RSL + Special Teams Hosts (Japan, Marrocos, UAE) + Stadiums**
 - Fixed all continental clubs competitions prize money
 
 
