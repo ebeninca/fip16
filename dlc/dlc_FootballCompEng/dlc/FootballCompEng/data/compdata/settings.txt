@@ -3799,4 +3799,3 @@
 1801,match_matchimportance,70
 1802,match_stagetype,FRIENDLY
 1802,match_matchsituation,FRIENDLY
-1803,num_games,1
