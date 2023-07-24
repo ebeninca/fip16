@@ -15,19 +15,25 @@ Edited with CM16 v2.0 beta 2
 
 ## Selected Cups on fip16 tournaments manager
 
-- Extra tournaments minus ROU,SUI,IRL
-- Compids 99/99
+- Extra tournaments minus IRL,SUI,POL,RUS,ROU
+- Compids 97/99
 
 ### Current used compdata spaces:
 
-- Compids 99/99
-- Compobj 1804/1809
-- Advancement 3397/3549
+- Compids 97/99
+- Compobj 1781/1809
+- Advancement 3441/3549
+- Tasks 797/800
+- Standings 5268/5278
+- Initteams 295/366
+- Schedule 6526/6995
+- **Settings 3757/3752 (Intl Friendly working even being out of bounds)**
 
 ## Fixes/modifications:
 
 v62.004
-- Deleted Polonese Cup to have enough free compobj to use in other expansions
+- **Copa Libertadores expanded to 32 teams**
+- Deleted Polonese and Russian cups to have enough free compobj to use in other expansions
 - FIFA CWC Setup Stage 2, trying to avoid a rare TBD when the host team and the AFC/CAF champions are the same.
 
 v62.003
@@ -90,7 +96,6 @@ v62.001
 ## Future Features:
 
 - Ajust CAF and AFC leagues calendars
-- Expand Libertadores to 32 teams (will need to delete Poland Cup to create compobj space)
 - Ajust prize money for all competitions
 
 - Do a better use of the teams from Rest of the world in continental cups.
@@ -118,4 +123,3 @@ load tournament mode and select saudi arabia.
 
 ***** Try to simplify the setup stages (maybe this is causing long term crashings) to leave some free compobjs to be used for new competitions or expand existing competitions 
 - Expand CONCACAF CHAMPIONS League to 16 teams
-- Libertadores with 32 teams (there's enough south american teams in Rest of the world for it)
