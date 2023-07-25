@@ -21,17 +21,21 @@ Edited with CM16 v2.0 beta 2
 ### Current used compdata spaces:
 
 - Compids 97/99
-- Compobj 1781/1809
-- Advancement 3441/3549
-- Tasks 797/800
-- Standings 5268/5278
+- Compobj 1785/1809
+- Advancement 3419/3549
+- Tasks 799/800
+- Standings 5275/5278
 - Initteams 295/366
 - Schedule 6526/6995
-- **Settings 3757/3752 (Intl Friendly working even being out of bounds)**
+- **Settings 3776/3752 (Intl Friendly and TUNI Cup working even being out of bounds)**
 
 ## Fixes/modifications:
 
+<ADJUST SETUP/GROUPS Definition rules for AFC CL and Libertadores PLAYOFF AND ROUND OF 16 CONFLICTING DATES>
+<VERIFY WC QUALIFYING USING DATES NOT IN INTL FRIENDLY>
+
 v62.004
+- Playoff round added to Copa Libertadores
 - **Copa Libertadores expanded to 32 teams**
 - Deleted Polonese and Russian cups to have enough free compobj to use in other expansions
 - FIFA CWC Setup Stage 2, trying to avoid a rare TBD when the host team and the AFC/CAF champions are the same.
