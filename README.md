@@ -21,12 +21,12 @@ Edited with CM16 v2.0 beta 2
 ### Current used compdata spaces:
 
 - Compids 97/99
-- Compobj 1785/1809
+- Compobj 1788/1809
 - Advancement 3419/3549
 - Tasks 799/800
 - Standings 5275/5278
 - Initteams 295/366
-- Schedule 6526/6995
+- Schedule 6529/6995
 - **Settings 3776/3752 (Intl Friendly and TUNI Cup working even being out of bounds)**
 
 ## Fixes/modifications:
@@ -35,6 +35,7 @@ Edited with CM16 v2.0 beta 2
 <VERIFY WC QUALIFYING USING DATES NOT IN INTL FRIENDLY>
 
 v62.004
+- "Setup Stage > Special Standing Rules > Previous Ranking" for "Copa Brasil" and "Copa Argentina"
 - Playoff round added to Copa Libertadores
 - **Copa Libertadores expanded to 32 teams**
 - Deleted Polonese and Russian cups to have enough free compobj to use in other expansions
