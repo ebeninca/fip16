@@ -35,6 +35,8 @@ Edited with CM16 v2.0 beta 2
 <VERIFY WC QUALIFYING USING DATES NOT IN INTL FRIENDLY>
 
 v62.004
+- "Setup Stage > Special Standing Rules > Team Rating" for Libertadores
+- Libertadores Final changed to KO1LEG
 - "Setup Stage > Special Standing Rules > Previous Ranking" for "Copa Brasil" and "Copa Argentina"
 - Playoff round added to Copa Libertadores
 - **Copa Libertadores expanded to 32 teams**
