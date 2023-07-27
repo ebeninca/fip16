@@ -34,7 +34,15 @@ Edited with CM16 v2.0 beta 2
 <ADJUST SETUP/GROUPS Definition rules for AFC CL and Libertadores PLAYOFF AND ROUND OF 16 CONFLICTING DATES>
 <VERIFY WC QUALIFYING USING DATES NOT IN INTL FRIENDLY>
 
+<TESTAR SE É NECESSARIO COLOCAR A SETIMA VAGA DA ARGENTINA NA LIBERTA (EM CASO DE CAMPEAO NO ANO ANTERIOR) NA PAGINA RANKINGS TABLE>
+<LIBERTADORES AINDA COM TBD NA SEGUNDA TEMPORADA>
+<OTHER LEAGUES ENGL CRASHING GAME WHEN PLAYING IN OTHER CONTINENT>
+
 v62.004
+- Reserved space for FIFA WC Playoff round
+- **Fixed TBD error: Long term error on CONCAChampions because of getting 2 best teams from Lamar Hunt Cup**
+- Removed Rankings table from FIFA WC AFC Qual to free tasks space
+- Deleted SWED cup to free enough spaces to avoid crashing when selecting pre-season tournament
 - "Setup Stage > Special Standing Rules > Team Rating" for Libertadores
 - Libertadores Final changed to KO1LEG
 - "Setup Stage > Special Standing Rules > Previous Ranking" for "Copa Brasil" and "Copa Argentina"
@@ -87,6 +95,10 @@ v62.001
 
 ## Issues: 
   
+- Other Leagues screen crashing on ENGL when you're playing in a league of other continent  
+- MLS using world cup dates, decided to not change for now because the game is doing different calendar compared with the data CM16 shows.
+  
+- Getting 2 best teams from a CUP cause TBD after the first season, in the first season the Rankings table makes it work 
 - Avoid access Intl Friendly/G1 screen on CM16 because it creates a num_games=1 line in settings.txt which duplicate games.
  
 - Canadian clubs on MLS doesn't participate in the US Open Cup, no further action for now.
