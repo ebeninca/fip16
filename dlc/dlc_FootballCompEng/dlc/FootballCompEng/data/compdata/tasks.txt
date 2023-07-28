@@ -306,8 +306,6 @@
 878,end,UpdateTable,878,880,3,3
 878,end,UpdateTable,878,880,4,4
 878,end,UpdateTable,878,880,5,5
-878,end,UpdateTable,878,880,6,6
-878,end,UpdateTable,878,880,7,7
 878,start,ClearLeagueStats,879,65,0,0
 878,end,UpdateLeagueStats,879,65,0,0
 878,start,FillFromLeague,880,65,0,0
@@ -423,8 +421,6 @@
 1139,end,UpdateTable,1139,1141,3,3
 1139,end,UpdateTable,1139,1141,4,4
 1139,end,UpdateTable,1139,1141,5,5
-1139,end,UpdateTable,1139,1141,6,6
-1139,end,UpdateTable,1139,1141,7,7
 1139,start,ClearLeagueStats,1140,56,0,0
 1139,end,UpdateLeagueStats,1140,56,0,0
 1139,start,FillFromLeague,1141,56,0,0
@@ -668,6 +664,7 @@
 1426,start,FillFromCompTable,1431,1566,2,0
 1426,start,FillFromCompTableBackup,1431,1570,1570,1
 1426,start,FillFromCompTableBackup,1431,1583,1583,1
+1426,start,FillFromLeagueMaxFromCountry,1431,336,2,2
 1478,end,UpdateTable,1478,1480,1,1
 1478,end,UpdateTable,1478,1480,2,2
 1478,end,UpdateTable,1478,1480,3,3
@@ -687,6 +684,7 @@
 1511,end,UpdateTable,1511,1513,4,4
 1511,end,UpdateTable,1511,1513,5,5
 1511,end,UpdateTable,1511,1513,6,6
+1511,end,UpdateTable,1511,1513,7,7
 1511,end,UpdateLeagueStats,1512,353,0,0
 1511,start,FillFromLeague,1513,353,0,0
 1514,end,UpdateTable,1514,1529,1,1
@@ -697,16 +695,19 @@
 1566,end,UpdateTable,1566,1568,2,2
 1566,end,UpdateTable,1566,1568,3,3
 1566,end,UpdateTable,1566,1568,4,4
+1566,end,UpdateTable,1566,1568,5,5
 1566,start,ClearLeagueStats,1567,335,0,0
 1566,end,UpdateLeagueStats,1567,335,0,0
 1566,start,FillFromLeague,1568,335,0,0
 1570,end,UpdateTable,1570,1582,1,1
 1570,end,UpdateTable,1570,1582,2,2
+1570,end,UpdateTable,1570,1579,2,3
 1570,start,ClearLeagueStats,1571,336,0,0
 1570,end,UpdateLeagueStats,1571,336,0,0
 1570,start,FillFromLeague,1572,336,0,0
 1583,end,UpdateTable,1583,1595,1,1
 1583,end,UpdateTable,1583,1595,2,2
+1583,end,UpdateTable,1583,1592,2,3
 1583,end,UpdateLeagueStats,1584,336,0,0
 1583,start,FillFromLeague,1585,336,0,0
 1597,end,UpdateTable,1597,1608,1,1

@@ -15,30 +15,29 @@ Edited with CM16 v2.0 beta 2
 
 ## Selected Cups on fip16 tournaments manager
 
-- Extra tournaments minus IRL,SUI,POL,RUS,ROU
-- Compids 97/99
+- Extra tournaments minus IRL,SWE,SUI,POL,RUS,ROU
+- Compids 96/99
 
 ### Current used compdata spaces:
 
-- Compids 97/99
-- Compobj 1788/1809
-- Advancement 3419/3549
-- Tasks 799/800
-- Standings 5275/5278
-- Initteams 295/366
-- Schedule 6529/6995
-- **Settings 3776/3752 (Intl Friendly and TUNI Cup working even being out of bounds)**
+- Compids 96/99
+- Compobj 1776/1809
+- Advancement 3405/3549
+- Tasks 795/800
+- Standings 5249/5278
+- Initteams 290/366
+- Schedule 6519/6995
+- Settings 3735/3752
 
 ## Fixes/modifications:
 
 <ADJUST SETUP/GROUPS Definition rules for AFC CL and Libertadores PLAYOFF AND ROUND OF 16 CONFLICTING DATES>
 <VERIFY WC QUALIFYING USING DATES NOT IN INTL FRIENDLY>
 
-<TESTAR SE É NECESSARIO COLOCAR A SETIMA VAGA DA ARGENTINA NA LIBERTA (EM CASO DE CAMPEAO NO ANO ANTERIOR) NA PAGINA RANKINGS TABLE>
-<LIBERTADORES AINDA COM TBD NA SEGUNDA TEMPORADA>
-<OTHER LEAGUES ENGL CRASHING GAME WHEN PLAYING IN OTHER CONTINENT>
-
 v62.004
+- Reduced the excessive number of ranking tables slots in IREL and SWED to free space in tasks
+- Increased slots in ranking tables for all CONMEBOL countries, considering that the champion of Libertadores have guarantee slot next season
+- Fixed Libertadores playoffs TBD after first season because of COLB playoffs qualified teams
 - Reserved space for FIFA WC Playoff round
 - **Fixed TBD error: Long term error on CONCAChampions because of getting 2 best teams from Lamar Hunt Cup**
 - Removed Rankings table from FIFA WC AFC Qual to free tasks space
@@ -94,12 +93,12 @@ v62.001
 
 
 ## Issues: 
-  
-- Other Leagues screen crashing on ENGL when you're playing in a league of other continent  
-- MLS using world cup dates, decided to not change for now because the game is doing different calendar compared with the data CM16 shows.
-  
-- Getting 2 best teams from a CUP cause TBD after the first season, in the first season the Rankings table makes it work 
-- Avoid access Intl Friendly/G1 screen on CM16 because it creates a num_games=1 line in settings.txt which duplicate games.
+
+- Reserving extra slots in league's Ranking tables is needed when the continental competition guarantees slot for the last champion, otherwise TBD will happen.  
+- Other Leagues screen crashing on ENGL when you're playing in a league of other continent (problem exists in the fip16 v62 CAF original) 
+- MLS using world cup dates, decided to not change for now because the game is doing different calendar compared with the data CM16 shows
+- Getting 2 best teams from a LEAGUE/CUP which has Final game cause TBD after the first season, in the first season the Rankings table makes it work, maybe the same team won both trophies, an extra qualification rule is needed 
+- Avoid access Intl Friendly/G1 screen on CM16 because it creates a num_games=1 line in settings.txt which duplicate games
  
 - Canadian clubs on MLS doesn't participate in the US Open Cup, no further action for now.
 - A chance of conflict on FIFA CWC exists between the host team and the winners of AFC / CAF Champions league being the same teams, it's very rare, doesn't crash, cup still playable, no further action for now.
@@ -117,8 +116,8 @@ v62.001
 - Ajust CAF and AFC leagues calendars
 - Ajust prize money for all competitions
 
-- Do a better use of the teams from Rest of the world in continental cups.
-- test ligamx with different config qualy for concachampions
+- Do a better use of the teams from Rest of the world in continental cups (Playoff in CONCAChampions).
+- FIFA WC Playoffs
 - Try code 4004 (random) for AFCON
 - test tournaments in tournaments mode ASIAN CUP (verify the ids before execution):
 
