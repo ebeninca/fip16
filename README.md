@@ -31,10 +31,8 @@ Edited with CM16 v2.0 beta 2
 
 ## Fixes/modifications:
 
-<ADJUST SETUP/GROUPS Definition rules for AFC CL and Libertadores PLAYOFF AND ROUND OF 16 CONFLICTING DATES>
-<VERIFY WC QUALIFYING USING DATES NOT IN INTL FRIENDLY>
-
 v62.004
+- Adjusted dates of CONMEBOL countries to avoid conflict with new Libertadores dates
 - Reduced the excessive number of ranking tables slots in IREL and SWED to free space in tasks
 - Increased slots in ranking tables for all CONMEBOL countries, considering that the champion of Libertadores have guarantee slot next season
 - Fixed Libertadores playoffs TBD after first season because of COLB playoffs qualified teams
@@ -91,15 +89,18 @@ v62.001
 - **Fixed TBD error: FIFA CWC G3: Winner Saudi/RSL + Special Teams Hosts (Japan, Marrocos, UAE) + Stadiums**
 - Fixed all continental clubs competitions prize money
 
+## Important info about editing:
+
+- Reserving extra slots in league's Ranking tables is needed when the continental competition guarantees slot for the last champion, otherwise long term TBD can happen.  
+- MLS using world cup dates, decided to not change for now because the game is doing different calendar compared with the data CM16 shows
+- Getting 2 best teams from a LEAGUE/CUP which has Final game cause TBD after the first season(in the first season filling the rankings table makes it work). Maybe the same team won more than one trophy, in this case an extra qualification rule is needed 
+- Avoid access Intl Friendly/G1 screen on CM16 because it creates a num_games=1 line in settings.txt which duplicate games
 
 ## Issues: 
 
-- Reserving extra slots in league's Ranking tables is needed when the continental competition guarantees slot for the last champion, otherwise TBD will happen.  
+<ADJUST SETUP/GROUPS Definition rules for AFC CL>
+
 - Other Leagues screen crashing on ENGL when you're playing in a league of other continent (problem exists in the fip16 v62 CAF original) 
-- MLS using world cup dates, decided to not change for now because the game is doing different calendar compared with the data CM16 shows
-- Getting 2 best teams from a LEAGUE/CUP which has Final game cause TBD after the first season, in the first season the Rankings table makes it work, maybe the same team won both trophies, an extra qualification rule is needed 
-- Avoid access Intl Friendly/G1 screen on CM16 because it creates a num_games=1 line in settings.txt which duplicate games
- 
 - Canadian clubs on MLS doesn't participate in the US Open Cup, no further action for now.
 - A chance of conflict on FIFA CWC exists between the host team and the winners of AFC / CAF Champions league being the same teams, it's very rare, doesn't crash, cup still playable, no further action for now.
 - New Zealand is qualifying to WC through CONCACAF Gold Cup, no changes made on it.
