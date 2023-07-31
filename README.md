@@ -20,19 +20,30 @@ Edited with CM16 v2.0 beta 2
 
 ### Current used compdata spaces:
 
-- Compids 96/99
-- Compobj 1787/1809
-- Advancement 3429/3549
-- Tasks 795/800
-- Settings 3748/3752
-- Standings 5273/5278
-- Initteams 290/366
-- Schedule 6514/6995
+- Compids 95/99
+- Compobj 1779/1809
+- Advancement 3423/3549
+- Tasks 798/800
+- Settings 3717/3752
+- Standings 5260/5278
+- Initteams 285/366
+- Schedule 6512/6995
 
 
 ## Fixes/modifications:
 
+<MESMOS TIMES VENCENDO MAIS DE 1 COMPETICAO VAI QUEBRAR SETUP STAGE G1 LIBERTADORES? MAIS PROTECOES?
+ MESMO TIME VENCENDO DIMAYOR 1 e 2, AJUSTADO, TESTAR!!! >
+ 
+TIME REST OF THE WORLD GANHAR LIBERTADORES OU UEFA CL, OQ ACONTECE? VAI QUEBRAR (TBD) NA TEMPORADA SEGUINTE? 
+
+LIGAMX CRASHING END OF APERTURA
+
+MUTIPLE LEAGUES CRASHING ON 4th NOVEMBER
+
 v62.004
+- **CONCAChampions with playoffs including Canada exclusive slots and Costa Rica clubs**
+- Deleted DENM Cup and reduced DENM League Rankings table to free space to CONCAChampions Playoff round
 - Improved Rounds draw on Libertadores to be identical to real life
 - Improved Round of 16 draw on AFC Champions League + Stadiums
 - Adjusted dates of CONMEBOL countries to avoid conflict with new Libertadores dates
@@ -101,7 +112,7 @@ v62.001
 
 ## Issues: 
 
-<ADJUST SETUP/GROUPS Definition rules for AFC CL>
+<ADJUST SETUP/GROUPS Definition rules for CONCAChampions>
 
 - Other Leagues screen crashing on ENGL when you're playing in a league of other continent (problem exists in the fip16 v62 CAF original) 
 - Canadian clubs on MLS doesn't participate in the US Open Cup, no further action for now.
@@ -120,8 +131,10 @@ v62.001
 - Ajust CAF and AFC leagues calendars
 - Ajust prize money for all competitions
 
-- Do a better use of the teams from Rest of the world in continental cups (Playoff in CONCAChampions).
 - FIFA WC Playoffs
+- Define a final game for Gold Cup
+- Enable WC in 2022 with Playoffs and correct slots distribution between continents
+
 - Try code 4004 (random) for AFCON
 - test tournaments in tournaments mode ASIAN CUP (verify the ids before execution):
 
@@ -139,9 +152,3 @@ settings.txt Remove INTERCUP parameters manually (First year, Peridiocity, Start
 
 load tournament mode and select saudi arabia. 
 ``` 
-
-***** Enable World Cup in 2022 - Asian qualifying not been used, New Zealand qualifying through CONCACAF Gold Cup. Adjust the number of slots per continent.
-- Define a final game for Gold Cup
-
-***** Try to simplify the setup stages (maybe this is causing long term crashings) to leave some free compobjs to be used for new competitions or expand existing competitions 
-- Expand CONCACAF CHAMPIONS League to 16 teams
