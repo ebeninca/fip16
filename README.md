@@ -32,17 +32,7 @@ Edited with CM16 v2.0 beta 2
 
 ## Fixes/modifications:
 
-<MESMOS TIMES VENCENDO MAIS DE 1 COMPETICAO VAI QUEBRAR SETUP STAGE G1 LIBERTADORES? MAIS PROTECOES?
- MESMO TIME VENCENDO DIMAYOR 1 e 2, AJUSTADO, TESTAR!!! >
- 
-TIME REST OF THE WORLD GANHAR LIBERTADORES OU UEFA CL, OQ ACONTECE? VAI QUEBRAR (TBD) NA TEMPORADA SEGUINTE? 
-
-LIGAMX CRASHING END OF APERTURA
-
-MUTIPLE LEAGUES CRASHING ON 4th NOVEMBER
-
 v62.004
-- **CONCAChampions with playoffs including Canada exclusive slots and Costa Rica clubs**
 - Deleted DENM Cup and reduced DENM League Rankings table to free space to CONCAChampions Playoff round
 - Improved Rounds draw on Libertadores to be identical to real life
 - Improved Round of 16 draw on AFC Champions League + Stadiums
