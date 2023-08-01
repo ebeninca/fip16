@@ -33,6 +33,7 @@ Edited with CM16 v2.0 beta 2
 ## Fixes/modifications:
 
 v62.004
+- Added extra setup stage on UNIT/COLB Leagues to define extra Continental comp. slots
 - Deleted DENM Cup and reduced DENM League Rankings table to free space to CONCAChampions Playoff round
 - Improved Rounds draw on Libertadores to be identical to real life
 - Improved Round of 16 draw on AFC Champions League + Stadiums
