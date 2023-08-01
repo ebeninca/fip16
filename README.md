@@ -15,16 +15,45 @@ Edited with CM16 v2.0 beta 2
 
 ## Selected Cups on fip16 tournaments manager
 
-- Extra tournaments minus ROU,SUI,IRL
-- Compids 99/99
+- Extra tournaments minus DENM,IRL,SWE,SUI,POL,RUS,ROU
+- Compids 95/99
 
 ### Current used compdata spaces:
 
-- Compids 99/99
-- Compobj 1804/1809
-- Advancement 3397/3549
+- Compids 95/99
+- Compobj 1784/1809
+- Advancement 3435/3549
+- Tasks 798/800
+- Settings 3723/3752
+- Standings 5272/5278
+- Initteams 284/366
+- Schedule 6512/6995
+
 
 ## Fixes/modifications:
+
+v62.004
+- Failsafe config on UEFA CL and Libertadores to avoid TBD in rare case where a Rest of the world team wins the competition and gets automatic qualification to next year edition
+- **ConcaChampions with 12 teams (Canada + Costa Rica) now working**
+- Added extra setup stage on UNIT/COLB Leagues to define extra Continental comp. slots 
+- Deleted DENM Cup and reduced DENM League Rankings table to free space to CONCAChampions Playoff round
+- Improved Rounds draw on Libertadores to be identical to real life
+- Improved Round of 16 draw on AFC Champions League + Stadiums
+- Adjusted dates of CONMEBOL countries to avoid conflict with new Libertadores dates
+- Reduced the excessive number of ranking tables slots in IREL and SWED to free space in tasks
+- Increased slots in ranking tables for all CONMEBOL countries considering that the champion of Libertadores have guarantee slot next season
+- Fixed Libertadores playoffs TBD after first season because of COLB playoffs qualified teams
+- Reserved space for FIFA WC Playoff round
+- **Fixed TBD error: Long term error on CONCAChampions because of getting 2 best teams from LigaMX, the same team won Apertura and Clausura demanding an extra option to fill the slots**
+- Removed Rankings table from FIFA WC AFC Qual to free tasks space
+- Deleted SWED cup to free enough spaces to avoid crashing when selecting pre-season tournament
+- "Setup Stage > Special Standing Rules > Team Rating" for Libertadores
+- Libertadores Final changed to KO1LEG
+- "Setup Stage > Special Standing Rules > Previous Ranking" for "Copa Brasil" and "Copa Argentina"
+- Playoff round added to Copa Libertadores
+- **Copa Libertadores expanded to 32 teams**
+- Deleted Polonese and Russian cups to have enough free compobj to use in other expansions
+- FIFA CWC Setup Stage 2, trying to avoid a rare TBD when the host team and the AFC/CAF champions are the same.
 
 v62.003
 - AFCON and AFC Cup periodicity of 2 years (Only the results of the closer one before the WC will be used to qualify)
@@ -52,10 +81,10 @@ v62.002
 - Added more dates to Egypt (WE PL) to avoid FIFA CWC date conflict
 - Ireland: changed dates avoid FIFA CWC date conflict
 - Netherlands/Norway/Poland: changed dates avoiding conflicts
-- Fixed TBD on CM16 Europa League Setup Stage (Portuguese League champion)
+- **Fixed TBD error: CM16 Europa League Setup Stage (Portuguese League champion)**
 - African Cup of Nations first year in 2023, kept periodicity in 2 years
 - Portugal/Spain changed december games dates to avoid conflicts
-- Fixed broken "Supercopa de Espana", TBD error. Setup Stage G1, Ranking table "Copa del Rey" adjusted
+- **Fixed TBD error: Broken "Supercopa de Espana". Setup Stage G1, Ranking table "Copa del Rey" adjusted**
 - Fixed CONCACAF Gold Cup dates, bigger gap between games
 - Removed ENGL PL / FRAN L1 / GERM B1 / ITAL A december dates that conflicts with FIFA CWC
 - Reduced number of dates on IREL League to avoid "end of the season" in the beginning
@@ -63,15 +92,20 @@ v62.002
 - Big overhaul on CONCACAF / MEXI / UNIT calendar and clubs that qualifies to ConcaChampions
 
 v62.001
-- CONCACAF champions setup stage G2: winners ligaMX and MLS
-- FIFA CWC G3: Winner Saudi/RSL + Special Teams Hosts (Japan, Marrocos, UAE) + Stadiums
+- **Fixed TBD error: CONCACAF champions setup stage G2: winners ligaMX and MLS**
+- **Fixed TBD error: FIFA CWC G3: Winner Saudi/RSL + Special Teams Hosts (Japan, Marrocos, UAE) + Stadiums**
 - Fixed all continental clubs competitions prize money
 
+## Important info about editing:
+
+- Reserving extra slots in league's Ranking tables is needed when the continental competition guarantees slot for the last champion, otherwise long term TBD can happen (not mandatory to define all slot teams, but it doesn't save space).  
+- MLS using world cup dates, decided to not change for now because the game is doing different calendar compared with the data CM16 shows
+- Getting 2 best teams from a LEAGUE/CUP which has Final game cause TBD after the first season(in the first season filling the rankings table makes it work). Maybe the same team won more than one trophy, in this case an extra qualification rule is needed 
+- Avoid access Intl Friendly/G1 screen on CM16 because it creates a num_games=1 line in settings.txt which duplicate games
 
 ## Issues: 
-  
-- Avoid access Intl Friendly/G1 screen on CM16 because it creates a num_games=1 line in settings.txt which duplicate games.
- 
+
+- Other Leagues screen crashing on ENGL when you're playing in a league of other continent (problem exists in the fip16 v62 CAF original) 
 - Canadian clubs on MLS doesn't participate in the US Open Cup, no further action for now.
 - A chance of conflict on FIFA CWC exists between the host team and the winners of AFC / CAF Champions league being the same teams, it's very rare, doesn't crash, cup still playable, no further action for now.
 - New Zealand is qualifying to WC through CONCACAF Gold Cup, no changes made on it.
@@ -86,11 +120,12 @@ v62.001
 ## Future Features:
 
 - Ajust CAF and AFC leagues calendars
-- Expand Libertadores to 32 teams (will need to delete Poland Cup to create compobj space)
 - Ajust prize money for all competitions
 
-- Do a better use of the teams from Rest of the world in continental cups.
-- test ligamx with different config qualy for concachampions
+- FIFA WC Playoffs
+- Define a final game for Gold Cup
+- Enable WC in 2022 with Playoffs and correct slots distribution between continents
+
 - Try code 4004 (random) for AFCON
 - test tournaments in tournaments mode ASIAN CUP (verify the ids before execution):
 
@@ -108,10 +143,3 @@ settings.txt Remove INTERCUP parameters manually (First year, Peridiocity, Start
 
 load tournament mode and select saudi arabia. 
 ``` 
-
-***** Enable World Cup in 2022 - Asian qualifying not been used, New Zealand qualifying through CONCACAF Gold Cup. Adjust the number of slots per continent.
-- Define a final game for Gold Cup
-
-***** Try to simplify the setup stages (maybe this is causing long term crashings) to leave some free compobjs to be used for new competitions or expand existing competitions 
-- Expand CONCACAF CHAMPIONS League to 16 teams
-- Libertadores with 32 teams (there's enough south american teams in Rest of the world for it)
