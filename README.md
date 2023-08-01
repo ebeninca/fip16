@@ -21,19 +21,20 @@ Edited with CM16 v2.0 beta 2
 ### Current used compdata spaces:
 
 - Compids 95/99
-- Compobj 1779/1809
-- Advancement 3423/3549
+- Compobj 1784/1809
+- Advancement 3435/3549
 - Tasks 798/800
-- Settings 3717/3752
-- Standings 5260/5278
-- Initteams 285/366
+- Settings 3723/3752
+- Standings 5272/5278
+- Initteams 284/366
 - Schedule 6512/6995
 
 
 ## Fixes/modifications:
 
 v62.004
-- Added extra setup stage on UNIT/COLB Leagues to define extra Continental comp. slots
+- ConcaChampions with 12 teams (Canada + Costa Rica) now working
+- Added extra setup stage on UNIT/COLB Leagues to define extra Continental comp. slots 
 - Deleted DENM Cup and reduced DENM League Rankings table to free space to CONCAChampions Playoff round
 - Improved Rounds draw on Libertadores to be identical to real life
 - Improved Round of 16 draw on AFC Champions League + Stadiums
@@ -102,8 +103,6 @@ v62.001
 - Avoid access Intl Friendly/G1 screen on CM16 because it creates a num_games=1 line in settings.txt which duplicate games
 
 ## Issues: 
-
-<ADJUST SETUP/GROUPS Definition rules for CONCAChampions>
 
 - Other Leagues screen crashing on ENGL when you're playing in a league of other continent (problem exists in the fip16 v62 CAF original) 
 - Canadian clubs on MLS doesn't participate in the US Open Cup, no further action for now.
