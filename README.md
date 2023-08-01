@@ -15,8 +15,8 @@ Edited with CM16 v2.0 beta 2
 
 ## Selected Cups on fip16 tournaments manager
 
-- Extra tournaments minus IRL,SWE,SUI,POL,RUS,ROU
-- Compids 96/99
+- Extra tournaments minus DENM,IRL,SWE,SUI,POL,RUS,ROU
+- Compids 95/99
 
 ### Current used compdata spaces:
 
@@ -33,14 +33,15 @@ Edited with CM16 v2.0 beta 2
 ## Fixes/modifications:
 
 v62.004
-- ConcaChampions with 12 teams (Canada + Costa Rica) now working
+- Failsafe config on UEFA CL and Libertadores to avoid TBD in rare case where a Rest of the world team wins the competition and gets automatic qualification to next year edition
+- **ConcaChampions with 12 teams (Canada + Costa Rica) now working**
 - Added extra setup stage on UNIT/COLB Leagues to define extra Continental comp. slots 
 - Deleted DENM Cup and reduced DENM League Rankings table to free space to CONCAChampions Playoff round
 - Improved Rounds draw on Libertadores to be identical to real life
 - Improved Round of 16 draw on AFC Champions League + Stadiums
 - Adjusted dates of CONMEBOL countries to avoid conflict with new Libertadores dates
 - Reduced the excessive number of ranking tables slots in IREL and SWED to free space in tasks
-- Increased slots in ranking tables for all CONMEBOL countries, considering that the champion of Libertadores have guarantee slot next season
+- Increased slots in ranking tables for all CONMEBOL countries considering that the champion of Libertadores have guarantee slot next season
 - Fixed Libertadores playoffs TBD after first season because of COLB playoffs qualified teams
 - Reserved space for FIFA WC Playoff round
 - **Fixed TBD error: Long term error on CONCAChampions because of getting 2 best teams from LigaMX, the same team won Apertura and Clausura demanding an extra option to fill the slots**
