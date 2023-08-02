@@ -21,16 +21,19 @@ Edited with CM16 v2.0 beta 2
 ### Current used compdata spaces:
 
 - Compids 95/99
-- Compobj 1784/1809
-- Advancement 3435/3549
+- Compobj 1786/1809
+- Advancement 3437/3549
 - Tasks 798/800
 - Settings 3723/3752
-- Standings 5272/5278
+- Standings 5274/5278
 - Initteams 284/366
 - Schedule 6512/6995
 
 
 ## Fixes/modifications:
+
+v62.005
+- FIFA CWC balanced definition of host team between Japan/Saudi/Morroco
 
 v62.004
 - Failsafe config on UEFA CL and Libertadores to avoid TBD in rare case where a Rest of the world team wins the competition and gets automatic qualification to next year edition
