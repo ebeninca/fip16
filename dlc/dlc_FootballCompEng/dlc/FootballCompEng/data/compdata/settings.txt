@@ -3577,6 +3577,7 @@
 1699,comp_type,CUP
 1699,match_matchimportance,75
 1700,match_stagetype,SETUP
+1700,standings_sort,PREVRANK
 1702,match_stagetype,KO1LEG
 1702,match_matchsituation,ROUNDX
 1702,info_prize_money,15000
@@ -3636,6 +3637,7 @@
 1728,comp_type,CUP
 1728,match_matchimportance,75
 1729,match_stagetype,SETUP
+1729,standings_sort,PREVRANK
 1731,match_stagetype,KO1LEG
 1731,match_matchsituation,ROUND16
 1732,num_games,1
@@ -3686,6 +3688,7 @@
 1758,comp_type,CUP
 1758,match_matchimportance,75
 1759,match_stagetype,SETUP
+1759,standings_sort,PREVRANK
 1761,match_stagetype,KO1LEG
 1761,match_matchsituation,ROUND16
 1762,num_games,1

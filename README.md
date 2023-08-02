@@ -21,18 +21,20 @@ Edited with CM16 v2.0 beta 2
 ### Current used compdata spaces:
 
 - Compids 95/99
-- Compobj 1786/1809
-- Advancement 3437/3549
+- Compobj 1788/1809
+- Advancement 3439/3549
 - Tasks 798/800
-- Settings 3723/3752
-- Standings 5274/5278
+- Settings 3728/3752
+- Standings 5276/5278
 - Initteams 284/366
-- Schedule 6512/6995
+- Schedule 6450/6995
 
 
 ## Fixes/modifications:
 
 v62.005
+- Big overhaul on ASTR calendar to avoid conflicts 
+- Small calendar overhaul on EGYP/SAFR/TUNI to avoid calendar conflicts
 - FIFA CWC balanced definition of host team between Japan/Saudi/Morroco
 
 v62.004
