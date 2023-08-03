@@ -15,24 +15,29 @@ Edited with CM16 v2.0 beta 2
 
 ## Selected Cups on fip16 tournaments manager
 
-- Extra tournaments minus DENM,IRL,SWE,SUI,POL,RUS,ROU
-- Compids 95/99
+- Extra tournaments minus DENM,IRL,NORW,POL,SWE,SUI,RUS,ROU
+- Compids 94/99
 
 ### Current used compdata spaces:
 
-- Compids 95/99
-- Compobj 1788/1809
-- Advancement 3439/3549
-- Tasks 798/800
-- Settings 3728/3752
-- Standings 5276/5278
-- Initteams 284/366
-- Schedule 6450/6995
+- Compids 94/99
+- Compobj 1776/1809
+- Advancement 3435/3549
+- Tasks 796/800
+- Settings 3709/3752
+- Standings 5256/5278
+- Initteams 283/366
+- Schedule 6427/6995
 
 
 ## Fixes/modifications:
 
 v62.005
+- Added AFC Group stage Pots to make the draw more similar to real life 
+- ASTR extra setup stage to better draw clubs to AFC CL
+- Prize money defined for all clubs championships Finals
+- CONCACAF Gold Cup Final game added
+- Norway cup deleted
 - Small calendar overhaul on SARB/KORE to avoid calendar conflicts
 - Big overhaul on ASTR calendar to avoid conflicts 
 - Small calendar overhaul on EGYP/SAFR/TUNI to avoid calendar conflicts
@@ -128,8 +133,9 @@ v62.001
 - Ajust prize money for all competitions
 
 - FIFA WC Playoffs
-- Define a final game for Gold Cup
 - Enable WC in 2022 with Playoffs and correct slots distribution between continents
+
+If there's free space at the end, fine tuning AFC setup group stage for JAPAN/AUSTR/KOREA
 
 - Try code 4004 (random) for AFCON
 - test tournaments in tournaments mode ASIAN CUP (verify the ids before execution):
