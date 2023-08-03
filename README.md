@@ -33,9 +33,10 @@ Edited with CM16 v2.0 beta 2
 ## Fixes/modifications:
 
 v62.005
+- Small calendar overhaul on SARB/KORE to avoid calendar conflicts
 - Big overhaul on ASTR calendar to avoid conflicts 
 - Small calendar overhaul on EGYP/SAFR/TUNI to avoid calendar conflicts
-- FIFA CWC balanced definition of host team between Japan/Saudi/Morroco
+- FIFA CWC more balanced definition of host team between Japan/Saudi/Morroco
 
 v62.004
 - Failsafe config on UEFA CL and Libertadores to avoid TBD in rare case where a Rest of the world team wins the competition and gets automatic qualification to next year edition
@@ -124,7 +125,6 @@ v62.001
 
 ## Future Features:
 
-- Ajust CAF and AFC leagues calendars
 - Ajust prize money for all competitions
 
 - FIFA WC Playoffs
