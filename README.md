@@ -21,19 +21,21 @@ Edited with CM16 v2.0 beta 2
 ### Current used compdata spaces:
 
 - Compids 94/99
-- Compobj 1776/1809
-- Advancement 3435/3549
-- Tasks 796/800
-- Settings 3725/3752
-- Standings 5256/5278
-- Initteams 283/366
+- Compobj 1762/1809
+- Advancement 3418/3549
+- Tasks 797/800
+- Settings 3727/3752
+- Standings 5235/5278
+- Initteams 281/366
 - Schedule 6427/6995
 
 
 ## Fixes/modifications:
 
 v62.005
-- ** FIFA WC Starting in 2022 with Playoff round**
+- Fine tuning AFC CL setup group stage for JAPAN/AUSTR/KOREA
+- **FIFA WC Starting in 2022 with Playoff round**
+- New Zealand removed from CONCACAF Gold Cup
 - Added AFC Group stage Pots to make the draw more similar to real life 
 - ASTR extra setup stage to better draw clubs to AFC CL
 - Prize money defined for all clubs championships Finals
@@ -111,32 +113,26 @@ v62.001
 ## Important info about editing:
 
 - Reserving extra slots in league's Ranking tables is needed when the continental competition guarantees slot for the last champion, otherwise long term TBD can happen (not mandatory to define all slot teams, but it doesn't save space).  
-- MLS using world cup dates, decided to not change for now because the game is doing different calendar compared with the data CM16 shows
+- MLS using world cup dates, changes in CM16 on MLS calendar doesn't have any effects.
 - Getting 2 best teams from a LEAGUE/CUP which has Final game cause TBD after the first season(in the first season filling the rankings table makes it work). Maybe the same team won more than one trophy, in this case an extra qualification rule is needed 
 - Avoid access Intl Friendly/G1 screen on CM16 because it creates a num_games=1 line in settings.txt which duplicate games
 
 ## Issues: 
 
 - Other Leagues screen crashing on ENGL when you're playing in a league of other continent (problem exists in the fip16 v62 CAF original) 
-- Canadian clubs on MLS doesn't participate in the US Open Cup, no further action for now.
 - A chance of conflict on FIFA CWC exists between the host team and the winners of AFC / CAF Champions league being the same teams, it's very rare, doesn't crash, cup still playable, no further action for now.
-- New Zealand is qualifying to WC through CONCACAF Gold Cup, no changes made on it.
 - CONCACAF Gold Cup not showing on tables full screen, same problem of AFC Asian Cup, still playable.
 - FIFA CWC Cup has been generated in AUG 26, Libertadores champion have to wait an entire year to participate, Is it possible to change this date to earlier DEC?
 
 - v62 CAF Real Madrid (as ukraine national team manager): ukraine isn't in the euro qualifiers competition
 - v62 CAF Al Ahly (as saudi arabia national team manager): shows "Copa America" table instead of "AFC Asian Cup" table. Not crashing, competition still playable. (not showing on original version too)
-- v62 CAF Real Madrid (as USA national team manager): FIFA CWC, Ulsan Hyundai always winning AFC Champions League? something broken?
 
 
 ## Future Features:
 
-- Adjust MLS dates
 - Adjust prize money for all competitions
-
 - Revisit FIFA WC Qualifiers to avoid any kind of TBD and do a better slot definition
-
-If there's free space at the end, fine tuning AFC setup group stage for JAPAN/AUSTR/KOREA
+- Test CONCACAF Gold Cup without New Zealand
 
 - Try code 4004 (random) for AFCON
 - test tournaments in tournaments mode ASIAN CUP (verify the ids before execution):
