@@ -33,6 +33,7 @@ Edited with CM16 v2.0 beta 2
 ## Fixes/modifications:
 
 v62.005
+- EURO Qualifiers entire reworked, all nations playing with playoffs at the end
 - Fine tuning AFC CL setup group stage for JAPAN/AUSTR/KOREA
 - **FIFA WC Starting in 2022 with Playoff round**
 - New Zealand removed from CONCACAF Gold Cup
