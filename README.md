@@ -24,7 +24,7 @@ Edited with CM16 v2.0 beta 2
 - Compobj 1776/1809
 - Advancement 3435/3549
 - Tasks 796/800
-- Settings 3709/3752
+- Settings 3725/3752
 - Standings 5256/5278
 - Initteams 283/366
 - Schedule 6427/6995
@@ -33,6 +33,7 @@ Edited with CM16 v2.0 beta 2
 ## Fixes/modifications:
 
 v62.005
+- ** FIFA WC Starting in 2022 with Playoff round**
 - Added AFC Group stage Pots to make the draw more similar to real life 
 - ASTR extra setup stage to better draw clubs to AFC CL
 - Prize money defined for all clubs championships Finals
@@ -130,10 +131,10 @@ v62.001
 
 ## Future Features:
 
-- Ajust prize money for all competitions
+- Adjust MLS dates
+- Adjust prize money for all competitions
 
-- FIFA WC Playoffs
-- Enable WC in 2022 with Playoffs and correct slots distribution between continents
+- Revisit FIFA WC Qualifiers to avoid any kind of TBD and do a better slot definition
 
 If there's free space at the end, fine tuning AFC setup group stage for JAPAN/AUSTR/KOREA
 
