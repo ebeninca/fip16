@@ -21,19 +21,20 @@ Edited with CM16 v2.0 beta 2
 ### Current used compdata spaces:
 
 - Compids 94/99
-- Compobj 1762/1809
-- Advancement 3418/3549
-- Tasks 797/800
-- Settings 3727/3752
-- Standings 5235/5278
-- Initteams 281/366
-- Schedule 6427/6995
+- Compobj 1776/1809
+- Advancement 3424/3549
+- Tasks 800/800
+- Settings 3749/3752
+- Standings 5255/5278(5275)
+- Initteams 271/366
+- Schedule 6428/6995
 
 
 ## Fixes/modifications:
 
 v62.005
-- EURO Qualifiers entire reworked, all nations playing with playoffs at the end
+- FIFA WC UEFA Qualifiers entire reworked, all nations playing and playoffs at the end
+- EURO Qualifiers entire reworked, all nations playing and playoffs at the end
 - Fine tuning AFC CL setup group stage for JAPAN/AUSTR/KOREA
 - **FIFA WC Starting in 2022 with Playoff round**
 - New Zealand removed from CONCACAF Gold Cup
@@ -125,15 +126,13 @@ v62.001
 - CONCACAF Gold Cup not showing on tables full screen, same problem of AFC Asian Cup, still playable.
 - FIFA CWC Cup has been generated in AUG 26, Libertadores champion have to wait an entire year to participate, Is it possible to change this date to earlier DEC?
 
-- v62 CAF Real Madrid (as ukraine national team manager): ukraine isn't in the euro qualifiers competition
 - v62 CAF Al Ahly (as saudi arabia national team manager): shows "Copa America" table instead of "AFC Asian Cup" table. Not crashing, competition still playable. (not showing on original version too)
 
 
 ## Future Features:
 
 - Adjust prize money for all competitions
-- Revisit FIFA WC Qualifiers to avoid any kind of TBD and do a better slot definition
-- Test CONCACAF Gold Cup without New Zealand
+- Revisit FIFA WC Qualifiers >> AFC Asian CUP, AFCON, Conmebol qual
 
 - Try code 4004 (random) for AFCON
 - test tournaments in tournaments mode ASIAN CUP (verify the ids before execution):
