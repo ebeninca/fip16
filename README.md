@@ -21,18 +21,21 @@ Edited with CM16 v2.0 beta 2
 ### Current used compdata spaces:
 
 - Compids 94/99
-- Compobj 1776/1809
-- Advancement 3424/3549
-- Tasks 800/800
-- Settings 3749/3752
-- Standings 5255/5278(5275)
-- Initteams 271/366
+- Compobj 1784/1809
+- Advancement 3428/3549
+- Tasks 796/800
+- Settings 3751/3752
+- Standings 5259/5278(5274)
+- Initteams 268/366
 - Schedule 6428/6995
 
 
 ## Fixes/modifications:
 
 v62.005
+- FIFA WC slots: Conmebol +1, UEFA -1
+- AFCON / Asian Cup / Copa America dates adjustment
+- Changed AFCON and Asian Cup setup stage pots to be more realistic
 - FIFA WC UEFA Qualifiers entire reworked, all nations playing and playoffs at the end
 - EURO Qualifiers entire reworked, all nations playing and playoffs at the end
 - Fine tuning AFC CL setup group stage for JAPAN/AUSTR/KOREA
