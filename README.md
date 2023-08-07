@@ -18,25 +18,46 @@ Edited with CM16 v2.0 beta 2
 - Extra tournaments minus DENM,IRL,NORW,POL,SWE,SUI,RUS,ROU
 - Compids 94/99
 
+### Routes
+
+FIFA WC Route:
+- UEFA: 2024 WC Qualifiers top 15 nations
+- CONCACAF: 2025 Gold Cup top 3 nations + 1 playoff
+- AFC: 2024 WC Qualifiers top 3 nations + 1 playoff
+- CONMEBOL: 2023 WC Qualifiers top 5 nations + 1 playoff
+- CAF: 2025 AFCON top 4 nations
+- OFC: New Zealand direct on playoffs
+
+FIFA Club WC Route:
+- UEFA: Champions League winner
+- CONCACAF: Champions League winner
+- AFC: Champions League winner
+- CONMEBOL: Libertadores **previous year** winner
+- CAF: Champions League winner
+- OFC: Auckland City direct on Round 1
+- Home Country Team: Random between Saudi/Morocco/Japan/UAE
+
 ### Current used compdata spaces:
 
 - Compids 94/99
-- Compobj 1784/1809
-- Advancement 3428/3549
-- Tasks 796/800
-- Settings 3751/3752
-- Standings 5259/5278(5274)
-- Initteams 268/366
-- Schedule 6428/6995
+- Compobj 1792/1809
+- Advancement 3438/3549
+- Tasks 791/800
+- Settings 3752/3752
+- Standings 5274/5278(5274)
+- Initteams 256/366
+- Schedule 6434/6995
 
 
 ## Fixes/modifications:
-
+  
 v62.005
+- **FIFA WC Asia Qualifiers enabled and working**
+- Ajusted "Colors" in group stage of all competitions
 - FIFA WC slots: Conmebol +1, UEFA -1
 - AFCON / Asian Cup / Copa America dates adjustment
 - Changed AFCON and Asian Cup setup stage pots to be more realistic
-- FIFA WC UEFA Qualifiers entire reworked, all nations playing and playoffs at the end
+- **FIFA WC UEFA Qualifiers entire reworked, all nations playing and playoffs at the end**
 - EURO Qualifiers entire reworked, all nations playing and playoffs at the end
 - Fine tuning AFC CL setup group stage for JAPAN/AUSTR/KOREA
 - **FIFA WC Starting in 2022 with Playoff round**
@@ -135,8 +156,6 @@ v62.001
 ## Future Features:
 
 - Adjust prize money for all competitions
-- Revisit FIFA WC Qualifiers >> AFC Asian CUP, AFCON, Conmebol qual
-
 - Try code 4004 (random) for AFCON
 - test tournaments in tournaments mode ASIAN CUP (verify the ids before execution):
 
