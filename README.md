@@ -18,6 +18,8 @@ Edited with CM16 v2.0 beta 2
 - Extra tournaments minus DENM,IRL,NORW,POL,SWE,SUI,RUS,ROU
 - Compids 94/99
 
+### Routes
+
 FIFA WC Route:
 - UEFA: 2024 WC Qualifiers top 15 nations
 - CONCACAF: 2025 Gold Cup top 3 nations + 1 playoff
