@@ -51,6 +51,19 @@ FIFA Club WC Route:
 
 ## Fixes/modifications:
   
+ ROMA / DENM(JUL) /
+
+GERM/ENGL EDITED
+  
+v62.0051
+- **Small fix ARGE Cup final date "conflict" with FIFA WC - 9/jun (Crashing starting new career)**
+- Changed FIFA WC Playoff games to 12/jun
+- COLB Adjusted Apertura Final date
+- MEXI Adjusted Clausura Final date
+- Working even with dates during FIFA WC (no changes made): KORE/UNIT/ 
+- NORW/IREL/SWED extra dates added to avoid league ending with fewer games than they should have
+-
+- Revisited all leagues calendars to avoid any conflict with FIFA WC Playoff
 v62.005
 - **FIFA WC Asia Qualifiers enabled and working**
 - Ajusted "Colors" in group stage of all competitions

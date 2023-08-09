@@ -2568,7 +2568,6 @@
 1213,standings_sort,GOALDIFF
 1213,standings_sort,GOALSFOR
 1214,num_games,1
-1214,info_color_slot_adv_group,1
 1214,info_color_slot_adv_group,2
 1214,info_color_slot_adv_group,3
 1214,info_color_slot_adv_group,4
@@ -2576,7 +2575,6 @@
 1214,info_color_slot_adv_group,6
 1214,info_color_slot_adv_group,7
 1215,num_games,1
-1215,info_color_slot_adv_group,1
 1215,info_color_slot_adv_group,2
 1215,info_color_slot_adv_group,3
 1215,info_color_slot_adv_group,4
