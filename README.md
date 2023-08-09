@@ -40,17 +40,29 @@ FIFA Club WC Route:
 ### Current used compdata spaces:
 
 - Compids 94/99
-- Compobj 1792/1809
+- Compobj 1790/1809
 - Advancement 3438/3549
 - Tasks 791/800
-- Settings 3752/3752
+- Settings 3750/3752
 - Standings 5274/5278(5274)
 - Initteams 256/366
-- Schedule 6434/6995
+- Schedule 6449/6995
 
 
 ## Fixes/modifications:
   
+v62.006
+- GERM/ENGL adjusted possible conflicting dates with FIFA WC playoffs
+- DENM/ROMA adjusted possible conflicting dates with FIFA WC dates
+- **MLS reworked to fix wrong advancements in final stages**
+- Revisited all leagues calendars to avoid any conflict with FIFA WC Playoff
+- COLB Adjusted Apertura Final date
+- MEXI Adjusted Clausura Final date
+- Working even with dates during FIFA WC (no changes made): KORE/UNIT
+- NORW/IREL/SWED extra dates added to avoid league ending with fewer games than they should have
+- Changed FIFA WC Playoff games to 12/jun
+- **Small fix ARGE Cup final date "conflict" with FIFA WC - 9/jun (Crashing starting new career)**
+
 v62.005
 - **FIFA WC Asia Qualifiers enabled and working**
 - Ajusted "Colors" in group stage of all competitions
