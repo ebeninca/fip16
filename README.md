@@ -56,6 +56,7 @@ FIFA Club WC Route:
 GERM/ENGL EDITED
   
 v62.0051
+- MLS reworked to fix wrong advancements in final stages
 - **Small fix ARGE Cup final date "conflict" with FIFA WC - 9/jun (Crashing starting new career)**
 - Changed FIFA WC Playoff games to 12/jun
 - COLB Adjusted Apertura Final date
