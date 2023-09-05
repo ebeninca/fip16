@@ -12,11 +12,9 @@ Edited with CM16 v2.0 beta 2
 5. Open CM16 editor again load the files and use the Regenerate BH function.
 6. Start a new career (it doesn't work with an existing one)
 
+## Why this exists?
 
-## Selected Cups on fip16 tournaments manager
-
-- Extra tournaments minus DENM,IRL,NORW,POL,SWE,SUI,RUS,ROU
-- Compids 94/99
+Noticing the lacking of realism and the abuse of shortcuts made by EA, made me have a desire to rebuild the entire tournaments tree, to make it the most realistic possible. The FIP 16 CAF version was the most close of my vision that I found, so I decided to improve it, then this repository was born.
 
 ### Routes
 
@@ -36,6 +34,23 @@ FIFA Club WC Route:
 - CAF: Champions League winner
 - OFC: Auckland City direct on Round 1
 - Home Country Team: Random between Saudi/Morocco/Japan/UAE
+
+### Most important improvements made (TL/DR)
+
+- **MLS reworked to fix wrong advancements in final stages**
+- **FIFA WC Asia Qualifiers enabled and working**
+- **FIFA WC UEFA Qualifiers entire reworked, all nations playing and playoffs at the end**
+- **UEFA Euro Qualifiers entire reworked, all nations playing and playoffs at the end**
+- **FIFA WC Starting in 2022 with Playoff round**
+- **ConcaChampions with 12 teams (Canada + Costa Rica) now working**
+- **Copa Libertadores expanded to 32 teams**
+- **AFC Champions League expanded to 24 teams using Rest of the world (China,Japan,UAE,India), 6 groups + Round of 16**
+- **Fixed TBD error: FIFA CWC G3: Winner Saudi/RSL + Special Teams Hosts (Japan, Marrocos, UAE) + Stadiums**
+
+## Selected Cups on fip16 tournaments manager
+
+- Extra tournaments minus DENM,IRL,NORW,POL,SWE,SUI,RUS,ROU
+- Compids 94/99
 
 ### Current used compdata spaces:
 
