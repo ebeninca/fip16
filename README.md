@@ -14,7 +14,7 @@ Edited with CM16 v2.0 beta 2
 
 ## Why this exists?
 
-Noticing the lacking of realism and the abuse of shortcuts made by EA, made me have a desire to rebuild the entire tournaments tree, to make it the most realistic possible. The FIP 16 CAF version was the most close of my vision that I found, so I decided to improve it, then this repository was born.
+Noticing the lacking of realism and the abuse of shortcuts made by EA, made me have a desire to rebuild the entire tournaments tree, to make it the most realistic possible. The FIP 16 CAF version was the most close to my vision that I found, so I decided to improve it, then this repository was born.
 
 ### Routes
 
@@ -37,15 +37,15 @@ FIFA Club WC Route:
 
 ### Most important improvements made (TL/DR)
 
-- **MLS reworked to fix wrong advancements in final stages**
-- **FIFA WC Asia Qualifiers enabled and working**
-- **FIFA WC UEFA Qualifiers entire reworked, all nations playing and playoffs at the end**
-- **UEFA Euro Qualifiers entire reworked, all nations playing and playoffs at the end**
-- **FIFA WC Starting in 2022 with Playoff round**
-- **ConcaChampions with 12 teams (Canada + Costa Rica) now working**
-- **Copa Libertadores expanded to 32 teams**
-- **AFC Champions League expanded to 24 teams using Rest of the world (China,Japan,UAE,India), 6 groups + Round of 16**
-- **Fixed TBD error: FIFA CWC G3: Winner Saudi/RSL + Special Teams Hosts (Japan, Marrocos, UAE) + Stadiums**
+- MLS reworked to fix wrong advancements in final stages
+- FIFA WC Asia Qualifiers enabled and working
+- FIFA WC UEFA Qualifiers entire reworked, all nations playing and playoffs at the end
+- UEFA Euro Qualifiers entire reworked, all nations playing and playoffs at the end
+- FIFA WC Starting in 2022 with Playoff round
+- ConcaChampions with 12 teams (Canada + Costa Rica) now working
+- Copa Libertadores expanded to 32 teams
+- AFC Champions League expanded to 24 teams using Rest of the world (China,Japan,UAE,India), 6 groups + Round of 16
+- Fixed TBD error: FIFA CWC G3: Winner Saudi/RSL + Special Teams Hosts (Japan, Marrocos, UAE) + Stadiums
 
 ## Selected Cups on fip16 tournaments manager
 
