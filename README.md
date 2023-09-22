@@ -30,7 +30,7 @@ FIFA Club WC Route:
 - UEFA: Champions League winner
 - CONCACAF: Champions League winner
 - AFC: Champions League winner
-- CONMEBOL: Libertadores **previous year** winner
+- CONMEBOL: Libertadores winner
 - CAF: Champions League winner
 - OFC: Auckland City direct on Round 1
 - Home Country Team: Random between Saudi/Morocco/Japan/UAE
@@ -43,7 +43,7 @@ FIFA Club WC Route:
 - UEFA Euro Qualifiers entire reworked, all nations playing and playoffs at the end
 - FIFA WC Starting in 2022 with Playoff round
 - ConcaChampions with 12 teams (Canada + Costa Rica) now working
-- Copa Libertadores expanded to 32 teams
+- Copa Libertadores expanded to 32 teams with playoff round
 - AFC Champions League expanded to 24 teams using Rest of the world (China,Japan,UAE,India), 6 groups + Round of 16
 - Fixed TBD error: FIFA CWC G3: Winner Saudi/RSL + Special Teams Hosts (Japan, Marrocos, UAE) + Stadiums
 
@@ -65,6 +65,9 @@ FIFA Club WC Route:
 
 
 ## Fixes/modifications:
+  
+v62.007
+- FIFA CWC table now is being generated at earlier DEC
   
 v62.006
 - GERM/ENGL adjusted possible conflicting dates with FIFA WC playoffs
@@ -175,10 +178,8 @@ v62.001
 - Other Leagues screen crashing on ENGL when you're playing in a league of other continent (problem exists in the fip16 v62 CAF original) 
 - A chance of conflict on FIFA CWC exists between the host team and the winners of AFC / CAF Champions league being the same teams, it's very rare, doesn't crash, cup still playable, no further action for now.
 - CONCACAF Gold Cup not showing on tables full screen, same problem of AFC Asian Cup, still playable.
-- FIFA CWC Cup has been generated in AUG 26, Libertadores champion have to wait an entire year to participate, Is it possible to change this date to earlier DEC?
 
 - v62 CAF Al Ahly (as saudi arabia national team manager): shows "Copa America" table instead of "AFC Asian Cup" table. Not crashing, competition still playable. (not showing on original version too)
-
 
 ## Future Features:
 

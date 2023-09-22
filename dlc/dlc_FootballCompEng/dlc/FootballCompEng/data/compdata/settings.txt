@@ -15,7 +15,7 @@
 0,standings_pointswin,3
 0,standings_pointsdraw,1
 0,standings_pointsloss,0
-0,schedule_seasonstartmonth,AUG
+0,schedule_seasonstartmonth,DEC
 0,schedule_year_start,2020
 0,schedule_year_offset,1
 0,schedule_internationaldependency,1
